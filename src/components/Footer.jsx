@@ -1,0 +1,384 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+import {
+    FaFacebookF,
+    FaLinkedinIn,
+    FaInstagram,
+    FaYoutube,
+    FaTelegramPlane,
+    FaWhatsapp,
+    FaAndroid,
+    FaApple,
+} from "react-icons/fa";
+
+import { FaXTwitter } from "react-icons/fa6";
+
+import finallogo from "../assets/Images/finallogo.jpeg";
+import meta from "../assets/Images/meta.svg";
+
+const Footer = () => {
+
+    return (
+
+        <footer className="w-full bg-[#13223a] text-white">
+
+            {/* TOP FOOTER */}
+            <div className="w-full px-2 py-14">
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-12">
+
+                    {/* COLUMN 1 */}
+                    <div>
+
+                        <h3 className="text-[20px] font-semibold mb-6">
+
+                            Our Products
+
+                        </h3>
+
+                        <div className="flex flex-col gap-3 text-[15px] text-[#d1d5db]">
+
+                            <Link to="/hello" className="hover:text-white transition">
+                                Hello
+                            </Link>
+
+                            <Link to="/segmento" className="hover:text-white transition">
+                                Segmento
+                            </Link>
+
+                            <Link to="/campaign" className="hover:text-white transition">
+                                Campaign
+                            </Link>
+
+                            <Link to="/otp" className="hover:text-white transition">
+                                OTP
+                            </Link>
+
+                        </div>
+
+                        {/* UTILITIES */}
+                        <h3 className="text-[20px] font-semibold mt-10 mb-6">
+
+                            Utilities
+
+                        </h3>
+
+                        <div className="flex flex-col gap-3 text-[15px] text-[#d1d5db]">
+
+                            <Link to="/url-shortener" className="hover:text-white transition">
+                                URL Shortener
+                            </Link>
+
+                            <Link to="/knowledgebase" className="hover:text-white transition">
+                                KnowledgeBase
+                            </Link>
+
+                            <Link to="/whatsapp-link-generator" className="hover:text-white transition">
+                                WhatsApp Link Generator
+                            </Link>
+
+                            <Link to="/whatsapp" className="hover:text-white transition">
+                                WhatsApp Chatbot
+                            </Link>
+
+                            <Link to="/chatbot" className="hover:text-white transition">
+                                Chatbot
+                            </Link>
+
+                        </div>
+
+                    </div>
+
+                    {/* COLUMN 2 */}
+                    <div>
+
+                        <h3 className="text-[20px] font-semibold mb-6">
+
+                            Channels
+
+                        </h3>
+
+                        <div className="flex flex-col gap-3 text-[15px] text-[#d1d5db]">
+
+                            <Link to="/sms" className="hover:text-white transition">
+                                SMS
+                            </Link>
+
+                            <Link to="/email" className="hover:text-white transition">
+                                Email
+                            </Link>
+                            <Link to="/rcs" className="hover:text-white transition">
+                                RCS
+                            </Link>
+
+                            <Link to="/whatsapp" className="hover:text-white transition">
+                                WhatsApp
+                            </Link>
+
+                            <Link to="/voice" className="hover:text-white transition">
+                                Voice
+                            </Link>
+
+                            <Link to="/numbers" className="hover:text-white transition">
+                                Numbers
+                            </Link>
+
+                        </div>
+
+                        {/* RESOURCES */}
+                        <h3 className="text-[20px] font-semibold mt-10 mb-6">
+
+                            Resources
+
+                        </h3>
+
+                        <div className="flex flex-col gap-3 text-[15px] text-[#d1d5db]">
+
+                            <Link to="/contact" className="hover:text-white transition">
+                                Guide
+                            </Link>
+
+                            <Link to="/sms" className="hover:text-white transition">
+                                FAQ
+                            </Link>
+
+                            <Link to="/rcs" className="hover:text-white transition">
+                                API Documentation
+                            </Link>
+
+                        </div>
+
+                    </div>
+
+                    {/* COLUMN 3 */}
+                    <div>
+
+                        <h3 className="text-[20px] font-semibold mb-6">
+
+                            Discover
+
+                        </h3>
+
+                        <div className="flex flex-col gap-3 text-[15px] text-[#d1d5db]">
+
+                            <Link to="/about" className="hover:text-white transition">
+                                About us
+                            </Link>
+
+                            <Link to="/contact-us" className="hover:text-white transition">
+                                Contact Us
+                            </Link>
+
+                            <Link to="/contact" className="hover:text-white transition">
+                                Developers
+                            </Link>
+
+                            <Link to="/about" className="hover:text-white transition">
+                                All SMS Solution for startups
+                            </Link>
+
+                            <Link to="/" className="hover:text-white transition">
+                                Partners & integrations
+                            </Link>
+
+                            <Link to="/" className="hover:text-white transition">
+                                Become a partner
+                            </Link>
+
+                            <Link to="/about" className="hover:text-white transition">
+                                Career
+                            </Link>
+
+                            <Link to="/" className="hover:text-white transition">
+                                Certificates
+                            </Link>
+
+                            <Link to="/" className="hover:text-white transition">
+                                Compare
+                            </Link>
+
+                        </div>
+
+                    </div>
+
+                    {/* COLUMN 4 */}
+                    <div className="xl:text-right">
+
+                        {/* LOGO */}
+                        <div className="flex xl:justify-end">
+
+                            <img
+                                src={finallogo}
+                                alt="All SMS Solution"
+                                className="h-20 object-contain"
+                            />
+
+                        </div>
+
+                        {/* DOWNLOAD APPS */}
+                        <div className="mt-8">
+
+                            <h3 className="text-[20px] font-semibold mb-4">
+
+                                Download Apps
+
+                            </h3>
+
+                            <div className="flex xl:justify-end items-center gap-4 text-[28px]">
+
+                                <a
+                                    href="https://play.google.com"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="hover:text-[#25D366] transition"
+                                >
+                                    <FaAndroid />
+                                </a>
+
+                                <a
+                                    href="https://www.apple.com/app-store/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="hover:text-[#cbd5e1] transition"
+                                >
+                                    <FaApple />
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        {/* SOCIAL MEDIA */}
+                        <div className="mt-10">
+
+                            <h3 className="text-[20px] font-semibold mb-4">
+
+                                Follow Us
+
+                            </h3>
+
+                            <div className="flex xl:justify-end items-center gap-4 text-[24px]">
+
+                                <a
+                                    href="https://facebook.com"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="hover:text-[#1877F2] transition"
+                                >
+                                    <FaFacebookF />
+                                </a>
+
+                                <a
+                                    href="https://linkedin.com"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="hover:text-[#0A66C2] transition"
+                                >
+                                    <FaLinkedinIn />
+                                </a>
+
+                                <a
+                                    href="https://instagram.com"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="hover:text-pink-400 transition"
+                                >
+                                    <FaInstagram />
+                                </a>
+
+                                <a
+                                    href="https://twitter.com"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="hover:text-white transition"
+                                >
+                                    <FaXTwitter />
+                                </a>
+
+                                <a
+                                    href="https://wa.me/919999999999"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="hover:text-[#25D366] transition"
+                                >
+                                    <FaWhatsapp />
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        {/* ADDRESS */}
+                        <div className="mt-10">
+
+                            <p className="text-[15px] leading-[32px] text-[#d1d5db] xl:text-right">
+
+                                Shop No 302 ,3rd floor , Auris Galleria,
+                                <br />
+                                Opp Landmark Hotel New Link Rd, Malad West,
+                                <br />
+                                Mumbai, Maharashtra 400064
+
+                            </p>
+
+                        </div>
+
+                        {/* META IMAGE */}
+                        <div className="mt-10 flex xl:justify-end">
+
+                            <a
+                                href="https://www.facebook.com/business/partner-directory/search?solution_type=messaging&ref=pd_home_hero_cta&id=5412005225590465&section=overview"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+
+                                <img
+                                    src={meta}
+                                    alt="Meta Business Partner"
+                                    className="h-20 object-contain hover:scale-105 transition-all duration-300"
+                                />
+
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            {/* BOTTOM FOOTER */}
+            <div className="w-full bg-[#071224] px-4 lg:px-8 py-6">
+
+                <div className="flex flex-wrap items-center gap-3 text-[14px] text-[#d1d5db]">
+
+                    <Link to="/terms" className="hover:text-white transition">
+                        Terms and Condition
+                    </Link>
+
+                    <span>|</span>
+
+                    <Link to="/privacy-policy" className="hover:text-white transition">
+                        Privacy policy
+                    </Link>
+
+                    <span>|</span>
+
+                </div>
+
+                {/* COPYRIGHT */}
+                <p className="text-[14px] text-[#9ca3af] mt-6">
+
+                    © 2024  All SMS Solution. All rights reserved.
+
+                </p>
+
+            </div>
+
+        </footer>
+
+    );
+};
+
+export default Footer;
