@@ -14,7 +14,7 @@ import {
 
 import { FaXTwitter } from "react-icons/fa6";
 
-import finallogo from "../assets/Images/finallogo.jpg";
+import finallogo from "../assets/Images/finallogo.png";
 import meta from "../assets/Images/meta.svg";
 
 const Footer = () => {
@@ -210,7 +210,7 @@ const Footer = () => {
                             <img
                                 src={finallogo}
                                 alt="All SMS Solution"
-                                className="h-20 object-contain"
+                                className="h-35 object-contain"
                             />
                         </div>
 
