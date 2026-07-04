@@ -1,29 +1,25 @@
 import React, { useState } from "react";
 import email from "../assets/Images/email.svg";
-import mail1 from "../assets/Images/mail1.webp";
+import mail1 from "../assets/Images/mail1.jpg";
 import mail2 from "../assets/Images/mail2.mp4";
-import mail3 from "../assets/Images/mail3.webp";
+import mail3 from "../assets/Images/mail3.jpeg";
 import mail4 from "../assets/Images/mail4.mp4";
-import mail5 from "../assets/Images/mail5.svg";
-import mail6 from "../assets/Images/mail6.svg";
-import mail7 from "../assets/Images/mail7.svg";
+import mail5 from "../assets/Images/mail5.jpg";
+import mail6 from "../assets/Images/mail6.jpg";
+import mail7 from "../assets/Images/mail7.jpg";
 import mail8 from "../assets/Images/mail8.mp4";
 import mail9 from "../assets/Images/mail9.mp4";
-import mail10 from "../assets/Images/mail10.svg";
-import mail11 from "../assets/Images/mail11.svg";
-import mail12 from "../assets/Images/mail12.svg";
-import mail13 from "../assets/Images/mail13.svg";
-import mail14 from "../assets/Images/mail14.svg";
+import mail10 from "../assets/Images/mail10.jpeg";
+import mail11 from "../assets/Images/mail11.jpg";
+import mail12 from "../assets/Images/mail12.jpg";
+import mail13 from "../assets/Images/mail13.jpg";
+import mail14 from "../assets/Images/mail14.jpeg";
 import mail15 from "../assets/Images/mail15.jpg";
-import mail16 from "../assets/Images/mail16.svg";
-import mail17 from "../assets/Images/mail17.svg";
-import mail18 from "../assets/Images/mail18.svg";
+import mail16 from "../assets/Images/mail16.jpg";
+import mail17 from "../assets/Images/mail17.jpg";
+import mail18 from "../assets/Images/mail18.jpg";
 import mail19 from "../assets/Images/mail19.mp4";
 import CTASection from "./CTASection";
-
-
-
-
 
 
 

@@ -6,12 +6,13 @@ import campaignicon from "../assets/Images/campaignicon.svg";
 import segmentoicon from "../assets/Images/segmentoicon.svg";
 import otpicon from "../assets/Images/otpicon.svg";
 
-import hello from "../assets/Images/hello.svg";
-import campaign from "../assets/Images/campaign.svg";
-import segmento from "../assets/Images/segmento.webp";
-import otp from "../assets/Images/otp.webp";
+import hello from "../assets/Images/hello.jpg";
+import campaign from "../assets/Images/campaign.jpg";
+import segmento from "../assets/Images/segmento.jpg";
+import otp from "../assets/Images/otp.jpg";
 import Channels from "./Channels";
 import Stats from "./Stats";
+import Carousel from "./Carousel";
 
 const Products = () => {
 
@@ -22,7 +23,7 @@ const Products = () => {
             title: "Hello",
             subtitle: "Empower your employees, Support your customers.",
             image: hello,
-            bg: "bg-[#f7f0df]",
+            bg: "bg-[#b08d37]",
             link: "/hello"
         },
         {
@@ -31,7 +32,7 @@ const Products = () => {
             title: "Campaign",
             subtitle: "Boost audience engagement through smart Platform.",
             image: campaign,
-            bg: "bg-[#f3ecfa]",
+            bg: "bg-[#8b59bd]",
             link: "/campaign"
         },
         {
@@ -40,7 +41,7 @@ const Products = () => {
             title: "Segmento",
             subtitle: "Customer segmentation by their actions or events.",
             image: segmento,
-            bg: "bg-[#f8edf4]",
+            bg: "bg-[#c24f98]",
             link: "/segmento"
         },
         {
@@ -49,7 +50,7 @@ const Products = () => {
             title: "OTP",
             subtitle: "Quick and reliable multichannel OTP verification",
             image: otp,
-            bg: "bg-[#edf5ff]",
+            bg: "bg-[#6099e0]",
             link: "/otp"
         }
     ];
@@ -106,7 +107,7 @@ const Products = () => {
                                         <img
                                             src={item.image}
                                             alt={item.title}
-                                            className="w-full h-[300px] object-contain group-hover:scale-105 transition-all duration-700"
+                                            className="w-[350px] h-[350px] object-contain group-hover:scale-105 transition-all duration-700"
                                         />
                                     </div>
 
@@ -118,7 +119,9 @@ const Products = () => {
 
                 </div>
             </section>
+            <Carousel />
             <Channels />
+
             <Stats />
         </>
     );

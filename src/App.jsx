@@ -44,8 +44,8 @@ function App() {
         <Route path="/numbers" element={<Numbers />} />
         <Route path="/rcs" element={<RCS />} />
         <Route path="/chatbot" element={<Chatbot />} />
-        <Route path="/url-shortner" element={<UrlShorter />} />
-        <Route path="/knowledgebase" element={<Knowlodge />} />
+        {/* <Route path="/url-shortner" element={<UrlShorter />} /> */}
+        {/* <Route path="/knowledgebase" element={<Knowlodge />} /> */}
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />

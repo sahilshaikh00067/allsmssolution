@@ -1,10 +1,11 @@
 import React from 'react'
 import voice from "../assets/Images/voice.svg";
-import voice1 from "../assets/Images/voice1.svg";
-import voice2 from "../assets/Images/voice2.svg";
-import voice3 from "../assets/Images/voice3.svg";
-import voice4 from "../assets/Images/voice4.svg";
-import voice5 from "../assets/Images/voice5.svg";
+import voice1 from "../assets/Images/voice1.jpg";
+import voice11 from "../assets/Images/voice11.jpg";
+import voice2 from "../assets/Images/voice2.jpg";
+import voice3 from "../assets/Images/voice3.jpg";
+import voice4 from "../assets/Images/voice4.jpg";
+import voice5 from "../assets/Images/voice5.jpg";
 import voice6 from "../assets/Images/voice6.svg";
 import voice7 from "../assets/Images/voice7.svg";
 import CTASection from './CTASection';
@@ -15,21 +16,24 @@ import CTASection from './CTASection';
 export default function Voice() {
     return (
         <>
-            <section className="w-full h-99 flex items-center overflow-hidden">
 
-                <div className="w-full px-2">
+            <section className="w-full min-h-screen flex items-start pt-4 overflow-hidden">
 
-                    <div className="">
+                {/* NO LEFT RIGHT PADDING */}
+                <div className="w-full">
+
+                    {/* BIGGER IMAGE SIDE */}
+                    <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] items-center gap-10">
 
                         {/* LEFT SIDE */}
-                        <div>
+                        <div className="px-2">
 
                             {/* TOP ICON */}
-                            <div className="flex items-center gap-4 mb-8">
+                            <div className="flex items-center gap-4 mb-6">
 
                                 <img
                                     src={voice}
-                                    alt="Hello"
+                                    alt="Campaign"
                                     className="w-11 h-11 object-contain"
                                 />
 
@@ -42,33 +46,33 @@ export default function Voice() {
                             </div>
 
                             {/* SMALL TITLE */}
-                            <p className="uppercase tracking-[3px] text-[#494cab] text-[18px] mb-6">
+                            <p className="uppercase tracking-[3px] text-[#621ccb] text-[18px] mb-5">
 
                                 connect with confidence
+
+
 
                             </p>
 
                             {/* MAIN HEADING */}
-                            <h1 className="text-[40px] lg:text-[40px] leading-[1.02] font-bold text-[#1f2937] max-w-[850px]">
+                            <h1 className="text-[35px] lg:text-[40px] leading-[1.08] font-bold text-[#1f2937] max-w-[850px]">
 
                                 Boost customer engagement and build trust
 
                             </h1>
 
                             {/* DESCRIPTION */}
-                            <p className="text-[20px] leading-[30px] text-[#4b5563] mt-8 max-w-[850px]">
+                            <p className="text-[23px] leading-[34px] text-[#4b5563] mt-3 max-w-[850px]">
 
                                 Start real-time conversations with crystal clear audio, low latency and deeper insights.
 
 
-
                             </p>
 
-                            {/* BUTTONS */}
-                            <div className="flex flex-wrap items-center gap-3 mt-10">
+                            {/* BUTTON */}
+                            <div className="flex flex-wrap items-center gap-3 mt-5">
 
-                                {/* GET STARTED */}
-                                <button className="bg-black hover:bg-[#253254] text-white px-2 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300 border">
+                                <button className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[18px] font-medium transition-all duration-300 border border-[#1a212b]">
 
                                     Get Started
 
@@ -78,6 +82,20 @@ export default function Voice() {
 
                         </div>
 
+                        {/* RIGHT SIDE IMAGE */}
+                        <div className="relative flex justify-end">
+
+                            <div className="w-full max-w-[900px] h-[510px] rounded-[1px] overflow-hidden">
+
+                                <img
+                                    src={voice11}
+                                    alt="Campaign"
+                                    className="w-full h-full rounded-[1px]"
+                                />
+
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>

@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import about1 from "../assets/Images/about1.webp";
+import about1 from "../assets/Images/about1.jpg";
 import about2 from "../assets/Images/about2.png";
 import about3 from "../assets/Images/about3.png";
 import about4 from "../assets/Images/about4.png";
 import about5 from "../assets/Images/about5.png";
 import about6 from "../assets/Images/about6.svg";
-import about7 from "../assets/Images/about7.png";
+import about7 from "../assets/Images/about6.jpg";
 import about8 from "../assets/Images/about8.png";
 import about9 from "../assets/Images/about9.png";
 import about10 from "../assets/Images/about10.png";

@@ -14,7 +14,7 @@ import {
 
 import { FaXTwitter } from "react-icons/fa6";
 
-import finallogo from "../assets/Images/finallogo.jpeg";
+import finallogo from "../assets/Images/finallogo.jpg";
 import meta from "../assets/Images/meta.svg";
 
 const Footer = () => {
@@ -206,14 +206,12 @@ const Footer = () => {
                     <div className="xl:text-right">
 
                         {/* LOGO */}
-                        <div className="flex xl:justify-end">
-
+                        <div className="flex justify-end w-full">
                             <img
                                 src={finallogo}
                                 alt="All SMS Solution"
                                 className="h-20 object-contain"
                             />
-
                         </div>
 
                         {/* DOWNLOAD APPS */}
@@ -261,7 +259,7 @@ const Footer = () => {
                             <div className="flex xl:justify-end items-center gap-4 text-[24px]">
 
                                 <a
-                                    href="https://facebook.com"
+                                    href="https://www.facebook.com/share/1aY6Q2dtup/"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="hover:text-[#1877F2] transition"
@@ -270,7 +268,7 @@ const Footer = () => {
                                 </a>
 
                                 <a
-                                    href="https://linkedin.com"
+                                    href="https://www.linkedin.com/in/all-sms-solution-23087a419?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="hover:text-[#0A66C2] transition"
@@ -279,7 +277,7 @@ const Footer = () => {
                                 </a>
 
                                 <a
-                                    href="https://instagram.com"
+                                    href="https://www.instagram.com/allsmssolution?igsh=MTJ2Mnp4bmQ4NHlmNg=="
                                     target="_blank"
                                     rel="noreferrer"
                                     className="hover:text-pink-400 transition"
@@ -288,7 +286,7 @@ const Footer = () => {
                                 </a>
 
                                 <a
-                                    href="https://twitter.com"
+                                    href="https://x.com/allsmssolution?s=20"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="hover:text-white transition"
@@ -297,7 +295,7 @@ const Footer = () => {
                                 </a>
 
                                 <a
-                                    href="https://wa.me/919999999999"
+                                    href="https://wa.me/919920067649"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="hover:text-[#25D366] transition"

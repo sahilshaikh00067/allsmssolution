@@ -5,21 +5,21 @@ import whatsapp2 from "../assets/Images/whatsapp2.mp4";
 import whatsapp3 from "../assets/Images/whatsapp3.mp4";
 import whatsapp4 from "../assets/Images/whatsapp4.mp4";
 import whatsapp5 from "../assets/Images/whatsapp5.mp4";
-import whatsapp6 from "../assets/Images/whatsapp6.svg";
-import whatsapp7 from "../assets/Images/whatsapp7.svg";
-import whatsapp8 from "../assets/Images/whatsapp8.svg";
-import whatsapp9 from "../assets/Images/whatsapp9.svg";
-import whatsapp10 from "../assets/Images/whatsapp10.svg";
-import whatsapp11 from "../assets/Images/whatsapp11.svg";
-import whatsapp12 from "../assets/Images/whatsapp12.svg";
-import whatsapp13 from "../assets/Images/whatsapp13.svg";
-import whatsapp14 from "../assets/Images/whatsapp14.svg";
-import whatsapp15 from "../assets/Images/whatsapp15.svg";
-import whatsapp16 from "../assets/Images/whatsapp16.svg";
-import whatsapp17 from "../assets/Images/whatsapp17.svg";
-import whatsapp18 from "../assets/Images/campaign5.jpeg";
-import whatsapp19 from "../assets/Images/whatsapp19.svg";
-import whatsapp20 from "../assets/Images/whatsapp20.svg";
+import whatsapp6 from "../assets/Images/whatsapp6.jpg";
+import whatsapp7 from "../assets/Images/whatsapp7.jpeg";
+import whatsapp8 from "../assets/Images/whatsapp8.jpeg";
+import whatsapp9 from "../assets/Images/whatsapp9.jpeg";
+import whatsapp10 from "../assets/Images/whatsapp10.jpg";
+import whatsapp11 from "../assets/Images/whatsapp11.jpg";
+import whatsapp12 from "../assets/Images/whatsapp12.jpeg";
+import whatsapp13 from "../assets/Images/whatsapp13.jpg";
+import whatsapp14 from "../assets/Images/whatsapp14.jpg";
+import whatsapp15 from "../assets/Images/whatsapp14.jpeg";
+import whatsapp16 from "../assets/Images/whatsapp16.jpg";
+import whatsapp17 from "../assets/Images/whatsapp17.jpg";
+import whatsapp18 from "../assets/Images/whatsapp18.jpg";
+import whatsapp19 from "../assets/Images/whatsapp19.jpg";
+import whatsapp20 from "../assets/Images/whatsapp20.jpg";
 import FAQ from "./FAQ";
 import CTASection from "./CTASection";
 
@@ -35,7 +35,6 @@ export default function Whatsapp() {
 
     return (
         <>
-
             <section className="w-full min-h-screen flex items-center overflow-hidden">
 
                 <div className="w-full px-2">
@@ -46,7 +45,7 @@ export default function Whatsapp() {
                         <div>
 
                             {/* TOP ICON */}
-                            <div className="flex items-center gap-4 mb-8">
+                            <div className="flex items-center gap-4 mb-6">
 
                                 <img
                                     src={whatsapp}
@@ -56,7 +55,7 @@ export default function Whatsapp() {
 
                                 <h3 className="text-[26px] font-semibold text-[#111827]">
 
-                                    WhatsApp Api
+                                    Whatsapp Api
 
                                 </h3>
 
@@ -77,7 +76,7 @@ export default function Whatsapp() {
                             </h1>
 
                             {/* DESCRIPTION */}
-                            <p className="text-[20px] leading-[30px] text-[#4b5563] mt-8 max-w-[850px]">
+                            <p className="text-[20px] leading-[30px] text-[#4b5563] mt-5 max-w-[850px]">
 
                                 Use Developer Friendly API to ensure smooth, real-time communication with your customers globally, enhancing engagement and satisfaction.
 
@@ -85,7 +84,7 @@ export default function Whatsapp() {
                             </p>
 
                             {/* BUTTONS */}
-                            <div className="flex flex-wrap items-center gap-3 mt-10">
+                            <div className="flex flex-wrap items-center gap-3 mt-5">
 
                                 {/* GET STARTED */}
                                 <button className="bg-black hover:bg-[#253254] text-white px-2 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300 border">
@@ -301,7 +300,7 @@ export default function Whatsapp() {
                                 muted
                                 loop
                                 playsInline
-                                className="w-full h-full rounded-[4px] object-cover"
+                                className="w-160 h-190 rounded-[4px]"
                             />
                         </div>
                     </div>

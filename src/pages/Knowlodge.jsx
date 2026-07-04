@@ -209,7 +209,7 @@ export default function Knowlodge() {
 
 
 
-                                It works on your branding and not oursYour users view your knowledge base under your branding on your website. Our whitelabel services ensure there’s no indication of it being powered by MSG91.
+                                It works on your branding and not oursYour users view your knowledge base under your branding on your website. Our whitelabel services ensure there’s no indication of it being powered by All SMS Solution.
                             </p>
 
                         </div>

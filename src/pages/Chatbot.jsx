@@ -5,15 +5,15 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
-import chatbot2 from "../assets/Images/chatbot2.webp";
-import chatbot3 from "../assets/Images/chatbot3.webp";
-import chatbot4 from "../assets/Images/chatbot4.webp";
-import chatbot5 from "../assets/Images/chatbot5.webp";
-import chatbot6 from "../assets/Images/chatbot6.jpeg";
-import chatbot7 from "../assets/Images/chatbot7.webp";
+import chatbot2 from "../assets/Images/chatbot2.jpg";
+import chatbot3 from "../assets/Images/chatbot3.jpg";
+import chatbot4 from "../assets/Images/chatbot4.jpg";
+import chatbot5 from "../assets/Images/chatbot5.jpg";
+import chatbot6 from "../assets/Images/chatbot6.jpg";
+import chatbot7 from "../assets/Images/chatbot7.jpg";
 import chatbot8 from "../assets/Images/chatbot8.mp4";
-import chatbot9 from "../assets/Images/chatbot9.webp";
-import chatbot10 from "../assets/Images/chatbot10.webp";
+import chatbot9 from "../assets/Images/chatbot9.jpg";
+import chatbot10 from "../assets/Images/chatbot10.jpg";
 import CTASection from "./CTASection";
 
 
@@ -226,7 +226,7 @@ const Chatbot = () => {
                         </h2>
                         <p className="text-gray-600 text-base md:text-lg mb-8 leading-relaxed">
                             Modern customers expect you to meet them wherever they are. With
-                            MSG91 Chatbot, deploy your conversational AI assistant across
+                            All SMS Solution Chatbot, deploy your conversational AI assistant across
                             more platforms than ever for seamless customer service:
                         </p>
 
@@ -332,7 +332,7 @@ const Chatbot = () => {
                     <div className="flex justify-center lg:justify-end">
                         <img
                             src={chatbot6}
-                            alt="MSG91 Voice Bot"
+                            alt="All SMS Solution Voice Bot"
                             className="w-full max-w-xl object-contain"
                         />
                     </div>
@@ -349,7 +349,7 @@ const Chatbot = () => {
                         Connect Instantly—Integrate With All Your Tools
                     </h2>
                     <p className="text-gray-600 text-base md:text-lg mb-5 leading-relaxed max-w-5xl">
-                        MSG91 AI chatbot connects with CRMs like Zoho, HubSpot, and
+                        All SMS Solution AI chatbot connects with CRMs like Zoho, HubSpot, and
                         Salesforce; e-commerce platforms like Shopify and WooCommerce; and
                         payment gateways like Razorpay and Stripe. It also syncs with tools
                         like Google Sheets, Slack, and Calendar. With APIs and webhooks,

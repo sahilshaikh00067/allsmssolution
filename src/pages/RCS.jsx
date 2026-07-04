@@ -1,144 +1,17 @@
-import React, { useState } from "react";
-import { FiCopy, FiCheck } from "react-icons/fi";
+import React from "react";
 import rcsicon from "../assets/Images/rcsicon.svg";
 import CTASection from "./CTASection";
-import rcs3 from "../assets/Images/rcs3.svg";
-import rcs4 from "../assets/Images/rcs4.svg";
-import rcs7 from "../assets/Images/rcs7.svg";
-import rcs8 from "../assets/Images/rcs8.svg";
-import rcs9 from "../assets/Images/rcs9.png";
+import rcs3 from "../assets/Images/rcs3.jpeg";
+import rcs4 from "../assets/Images/rcs4.jpg";
+import rcs7 from "../assets/Images/rcs5.jpg";
+import rcs8 from "../assets/Images/rcs6.jpg";
+import rcs9 from "../assets/Images/rcs9.jpg";
+import rcs10 from "../assets/Images/rcs10.jpg";
+import rcs11 from "../assets/Images/rcs11.jpg";
+import rcs12 from "../assets/Images/rcs12.jpg";
+import rcs13 from "../assets/Images/rcs13.jpg";
+import rcsv from "../assets/Images/rcsv.mp4";
 
-
-
-const codeSamples = {
-    python: `import requests
-
-headers = {
-    'authkey': '<authkey>',
-    'accept': 'application/json',
-    'content-type': 'application/json',
-}
-
-json_data = {
-    'customer_numbers': [
-        '918818888761',
-        '918818888763',
-    ],
-    'project_id': '{{project_id}}',
-    'function_name': 'text_message',
-    'text': 'rcs test',
-}
-
-response = requests.post('https://control.msg91.com/api/v5/rcs/send-rcs-message/bulk/', headers=headers,
-json=json_data)`,
-
-    node: `import fetch from 'node-fetch';
-
-fetch('https://control.msg91.com/api/v5/rcs/send-rcs-message/bulk/', {
-  method: 'POST',
-  headers: {
-    'authkey': '<authkey>',
-    'accept': 'application/json',
-    'content-type': 'application/json'
-  },
-  body: JSON.stringify({
-    'customer_numbers': [
-      '918818888761',
-      '918818888763'
-    ],
-    'project_id': '{{project_id}}',
-    'function_name': 'text_message',
-    'text': 'rcs test'
-  })
-});`,
-
-    php: `<?php
-
-$curl = curl_init();
-
-curl_setopt_array($curl, [
-    CURLOPT_URL => "https://control.msg91.com/api/v5/rcs/send-rcs-message/bulk/",
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_CUSTOMREQUEST => "POST",
-    CURLOPT_HTTPHEADER => [
-        "authkey: <authkey>",
-        "accept: application/json",
-        "content-type: application/json"
-    ],
-    CURLOPT_POSTFIELDS => json_encode([
-        "customer_numbers" => [
-            "918818888761",
-            "918818888763"
-        ],
-        "project_id" => "{{project_id}}",
-        "function_name" => "text_message",
-        "text" => "rcs test"
-    ])
-]);
-
-$response = curl_exec($curl);
-curl_close($curl);
-
-echo $response;`,
-
-    ruby: `require 'net/http'
-require 'json'
-
-uri = URI('https://control.msg91.com/api/v5/rcs/send-rcs-message/bulk/')
-req = Net::HTTP::Post.new(uri)
-req.content_type = 'application/json'
-req['authkey'] = '<authkey>'
-req['accept'] = 'application/json'
-
-req.body = {
-  'customer_numbers' => [
-    '918818888761',
-    '918818888763'
-  ],
-  'project_id' => '{{project_id}}',
-  'function_name' => 'text_message',
-  'text' => 'rcs test'
-}.to_json
-
-req_options = {
-  use_ssl: uri.scheme == 'https'
-}
-res = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
-  http.request(req)
-end`,
-
-    curl: `curl -X POST "https://control.msg91.com/api/v5/rcs/send-rcs-message/bulk/" \\
--H "authkey: <authkey>" \\
--H "accept: application/json" \\
--H "content-type: application/json" \\
--d '{"customer_numbers":["918818888761","918818888763"],"project_id":"{{project_id}}","function_name":"text_message","text":"rcs test"}'`
-};
-
-const tabs = [
-    { key: "python", label: "python" },
-    { key: "node", label: "node" },
-    { key: "php", label: "php" },
-    { key: "ruby", label: "ruby" },
-    { key: "curl", label: "curl" }
-];
-
-// Very lightweight syntax highlighter (keys, strings, keywords)
-const highlight = (code) => {
-    return code
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        // strings (single + double quoted)
-        .replace(/('(?:[^'\\]|\\.)*')/g, '<span class="text-[#7ee787]">$1</span>')
-        .replace(/("(?:[^"\\]|\\.)*")/g, '<span class="text-[#7ee787]">$1</span>')
-        // keywords
-        .replace(
-            /\b(import|from|require|method|headers|body|const|let|var|return|echo|do|end|def|use_ssl|CURLOPT_[A-Z_]+)\b/g,
-            '<span class="text-[#ff7b72]">$1</span>'
-        )
-        // numbers
-        .replace(/\b(\d{6,})\b/g, '<span class="text-[#79c0ff]">$1</span>');
-};
 
 const RCS = ({
     icon = rcsicon,
@@ -148,45 +21,29 @@ const RCS = ({
     description = "RCS messaging is an integrated channel that enables businesses to engage customers through rich, immersive, two-way conversations.",
     ctaLabel = "Get Started",
     ctaLink = "/signup",
-    samples = codeSamples
 }) => {
-
-    const [activeTab, setActiveTab] = useState("python");
-    const [copied, setCopied] = useState(false);
-
-    const handleCopy = async () => {
-        try {
-            await navigator.clipboard.writeText(samples[activeTab]);
-            setCopied(true);
-            setTimeout(() => setCopied(false), 2000);
-        } catch (err) {
-            console.error("Copy failed", err);
-        }
-    };
 
     return (
         <>
-            <section className="w-full bg-white py-16 px-6">
-                <div className="max-w-7xl mx-auto items-start">
+            <section className="w-full bg-white py-4 px-2">
+                <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
 
                     {/* LEFT CONTENT */}
                     <div>
                         <div className="flex items-center gap-2 mb-4">
-                            <img src={icon} alt={name} className="w-10 h-10" />
-                            <span className="text-[17px] font-semibold text-[#111827]">{name}</span>
+                            <img src={icon} alt={name} className="w-14 h-14" />
+                            <span className="text-[22px] font-semibold text-[#111827]">{name}</span>
                         </div>
 
-                        <p className="uppercase tracking-[3px] text-[#494cab] text-[18px] mb-6">
-
+                        <p className="uppercase tracking-[3px] text-[#494cab] text-[18px] mb-3">
                             {eyebrow}
-
                         </p>
 
                         <h2 className="text-3xl md:text-4xl font-bold text-[#111827] leading-tight mb-5">
                             {heading}
                         </h2>
 
-                        <p className="text-gray-600 text-base mb-7 max-w-xl">
+                        <p className="text-gray-600 text-base mb-7 max-2xl">
                             {description}
                         </p>
 
@@ -197,67 +54,105 @@ const RCS = ({
                         </a>
                     </div>
 
-
-
-                    {/* RIGHT CODE WIDGET */}
-                    <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-[#1f2533] mt-10">
-
-                        {/* TABS */}
-                        <div className="flex bg-[#1c2333] text-[13px]">
-                            {tabs.map((tab) => (
-                                <button
-                                    key={tab.key}
-                                    onClick={() => setActiveTab(tab.key)}
-                                    className={`flex-1 px-4 py-3.5 font-medium transition-colors ${activeTab === tab.key
-                                        ? "bg-[#0d1117] text-white"
-                                        : "text-gray-400 hover:text-gray-200"
-                                        }`}
-                                >
-                                    {tab.label}
-                                </button>
-                            ))}
-                        </div>
-
-                        {/* CODE AREA */}
-                        <div className="relative bg-[#0d1117]">
-
-                            <button
-                                onClick={handleCopy}
-                                className="absolute top-4 right-4 flex items-center gap-1.5 bg-[#21262d] hover:bg-[#30363d] text-gray-200 text-xs px-3 py-1.5 rounded-md transition-colors z-10"
-                            >
-                                {copied ? (
-                                    <>
-                                        <FiCheck className="text-green-400" />
-                                        Copied
-                                    </>
-                                ) : (
-                                    <>
-                                        <FiCopy />
-                                        Copy
-                                    </>
-                                )}
-                            </button>
-
-                            <pre className="text-[13px] leading-relaxed p-6 pt-16 font-mono whitespace-pre-wrap break-words">
-                                <code
-                                    dangerouslySetInnerHTML={{
-                                        __html: highlight(samples[activeTab])
-                                    }}
-                                />
-                            </pre>
-
-                        </div>
+                    {/* RIGHT VIDEO */}
+                    <div className=" rounded-2xl overflow-hidden">
+                        <video
+                            src={rcsv}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-full md:h-[595px] object-cover"
+                        />
                     </div>
 
                 </div>
             </section>
 
-                        <section className="w-full border border-gray-300 bg-white overflow-hidden ">
+            {/* FOUR COLUMN FEATURE GRID */}
+            <section className="w-full py-6 bg-white">
+                <div className="max-w-8xl px-2">
+
+                    {/* HEADING */}
+                    <div className="mb-14 text-center">
+                        <h2 className="text-[28px] lg:text-[33px] font-bold text-[#111827] leading-tight">
+                            Why Businesses Choose RCS Messaging
+                        </h2>
+                    </div>
+
+                    {/* GRID - 4 COLUMNS */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                        {/* CARD 1 */}
+                        <div className="flex flex-col items-center text-center">
+                            <img
+                                src={rcs13}
+                                alt="Verified Sender ID"
+                                className="w-160 h-50 object-contain mb-2"
+                            />
+                            <h3 className="text-[20px] font-semibold text-[#111827] mb-2">
+                                Verified Sender ID
+                            </h3>
+                            <p className="text-[15px] leading-[24px] text-[#4b5563]">
+                                Build instant trust with a Google-verified business profile, logo, and branded name in every conversation.
+                            </p>
+                        </div>
+
+                        {/* CARD 2 */}
+                        <div className="flex flex-col items-center text-center">
+                            <img
+                                src={rcs11}
+                                alt="Rich Media Messages"
+                                className="w-160 h-50 object-contain mb-2"
+                            />
+                            <h3 className="text-[20px] font-semibold text-[#111827] mb-2">
+                                Rich Media Messages
+                            </h3>
+                            <p className="text-[15px] leading-[24px] text-[#4b5563]">
+                                Share images, videos, carousels, and interactive buttons directly inside the native SMS inbox.
+                            </p>
+                        </div>
+
+                        {/* CARD 3 */}
+                        <div className="flex flex-col items-center text-center">
+                            <img
+                                src={rcs10}
+                                alt="Two-Way Conversations"
+                                className="w-160 h-50 object-contain mb-2"
+                            />
+                            <h3 className="text-[20px] font-semibold text-[#111827] mb-2">
+                                Two-Way Conversations
+                            </h3>
+                            <p className="text-[15px] leading-[24px] text-[#4b5563]">
+                                Enable real-time, two-way chat that lets customers respond, ask questions, and complete actions instantly.
+                            </p>
+                        </div>
+
+                        {/* CARD 4 */}
+                        <div className="flex flex-col items-center text-center">
+                            <img
+                                src={rcs12}
+                                alt="Delivery & Read Reports"
+                                className="w-160 h-50 object-contain mb-2"
+                            />
+                            <h3 className="text-[20px] font-semibold text-[#111827] mb-2">
+                                Delivery & Read Reports
+                            </h3>
+                            <p className="text-[15px] leading-[24px] text-[#4b5563]">
+                                Track delivered, read, and replied statuses in real time to measure campaign performance accurately.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section className="w-full border border-gray-300 bg-white overflow-hidden ">
 
                 <div className="w-full px-2">
 
                     {/* 60% CONTENT — 40% IMAGE */}
-                    <div className=" p-12 grid grid-cols-1 lg:grid-cols-[60%_40%] items-center gap-12">
+                    <div className=" p-2 grid grid-cols-1 lg:grid-cols-[60%_40%] items-center gap-12">
 
                         {/* LEFT CONTENT */}
                         <div>
@@ -265,7 +160,7 @@ const RCS = ({
                             {/* HEADING */}
                             <h2 className="text-[25px] lg:text-[30px] font-bold text-[#111827] leading-tight max-w-[900px]">
 
-Integrate RCS Messaging API into Your Business in Minutes
+                                Integrate RCS Messaging API into Your Business in Minutes
 
                             </h2>
 
@@ -274,7 +169,7 @@ Integrate RCS Messaging API into Your Business in Minutes
 
 
 
-Seamlessly integrate RCS with your existing systems via our programmable API. Connect with CRM, email, social media, and SMS platforms to deliver rich messaging, automate workflows, and track campaign performance.                            </p>
+                                Seamlessly integrate RCS with your existing systems via our programmable API. Connect with CRM, email, social media, and SMS platforms to deliver rich messaging, automate workflows, and track campaign performance.                            </p>
 
                         </div>
 
@@ -454,7 +349,7 @@ Seamlessly integrate RCS with your existing systems via our programmable API. Co
                             {/* HEADING */}
                             <h2 className="text-[25px] lg:text-[30px] font-bold text-[#111827] leading-tight max-w-[900px]">
 
-Enhanced Customer Trust
+                                Enhanced Customer Trust
 
                             </h2>
 
@@ -463,7 +358,7 @@ Enhanced Customer Trust
 
 
 
-Understand your customer's habits Personalize your communication, and build lasting relationships that drive loyalty. Utilize verified and badged sender IDs vetted by Google for higher response rates and enhanced trust and credibility.
+                                Understand your customer's habits Personalize your communication, and build lasting relationships that drive loyalty. Utilize verified and badged sender IDs vetted by Google for higher response rates and enhanced trust and credibility.
                             </p>
 
                         </div>
@@ -488,13 +383,6 @@ Understand your customer's habits Personalize your communication, and build last
                 </div>
 
             </section>
-
-
-            
-
-
-
-
 
 
             <CTASection />
