@@ -91,7 +91,7 @@ export default function Voice() {
                                     src={voice11}
                                     alt="Campaign"
                                     className="w-full h-full rounded-[1px]"
-                                />
+                                /> 
 
                             </div>
 
