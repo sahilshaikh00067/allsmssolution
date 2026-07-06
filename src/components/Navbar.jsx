@@ -27,9 +27,6 @@ import whatsapp from "../assets/Images/whatsapp.svg";
 import voice from "../assets/Images/voice.svg";
 import numbers from "../assets/Images/numbers.svg";
 
-// Utilities
-import shorturl from "../assets/Images/shorturl.svg";
-import knowicon from "../assets/Images/knowicon.svg";
 
 const Navbar = () => {
 
@@ -63,12 +60,6 @@ const Navbar = () => {
         { name: "Voice", icon: voice, to: "/voice" },
                 { name: "Chatbot", icon: helloicon, to: "/chatbot" },
         { name: "Numbers", icon: numbers, to: "/numbers" },
-    ];
-
-    const utilities = [
-        { name: "URL Shortener", desc: "Customize and Track URLs", icon: shorturl, to: "/url-shortner" },
-        { name: "KnowledgeBase", desc: "Self-serve Help Center", icon: knowicon, to: "/knowledgebase" },
-        
     ];
 
     return (
@@ -232,37 +223,6 @@ const Navbar = () => {
                                                                 src={item.icon}
                                                                 alt={item.name}
                                                                 className="w-13 h-13 object-contain mt-0.6"
-                                                            />
-
-                                                            <div>
-                                                                <p className="text-[17px] font-semibold text-[#111827] group-hover/item:text-[#9e892c] transition">
-                                                                    {item.name}
-                                                                </p>
-                                                                <p className="text-[15px] text-gray-500">
-                                                                    {item.desc}
-                                                                </p>
-                                                            </div>
-                                                        </Link>
-                                                    ))}
-                                                </div>
-
-                                                {/* UTILITIES */}
-                                                <p className="text-[16px] font-semibold tracking-wide text-gray-400 uppercase mt-8 mb-4">
-                                                    Utilities
-                                                </p>
-
-                                                <div className="flex flex-col gap-5">
-                                                    {utilities.map((item, index) => (
-                                                        <Link
-                                                            key={index}
-                                                            to={item.to}
-                                                            onClick={() => setProductsOpen(false)}
-                                                            className="flex items-start gap-3 group/item"
-                                                        >
-                                                            <img
-                                                                src={item.icon}
-                                                                alt={item.name}
-                                                                className="w-13 h-13 object-contain mt-0.5"
                                                             />
 
                                                             <div>

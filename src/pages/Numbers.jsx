@@ -1,6 +1,6 @@
 import React from 'react'
 import numbers from "../assets/Images/numbers.svg";
-import numbers1 from "../assets/Images/numbers1.svg";
+import numbers1 from "../assets/Images/numbers1.jpg";
 import number2 from "../assets/Images/number2.svg";
 import number3 from "../assets/Images/number3.svg";
 import number4 from "../assets/Images/number4.svg";
