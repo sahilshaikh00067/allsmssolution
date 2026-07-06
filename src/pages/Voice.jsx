@@ -6,8 +6,8 @@ import voice2 from "../assets/Images/voice2.jpg";
 import voice3 from "../assets/Images/voice3.jpg";
 import voice4 from "../assets/Images/voice4.jpg";
 import voice5 from "../assets/Images/voice5.jpg";
-import voice6 from "../assets/Images/voice6.svg";
-import voice7 from "../assets/Images/voice7.svg";
+import voice6 from "../assets/Images/voice6.jpg";
+import voice7 from "../assets/Images/voice7.jpg";
 import CTASection from './CTASection';
 
 

@@ -19,6 +19,7 @@ import mail16 from "../assets/Images/mail16.jpg";
 import mail17 from "../assets/Images/mail17.jpg";
 import mail18 from "../assets/Images/mail18.jpg";
 import mail19 from "../assets/Images/mail19.mp4";
+import maill from "../assets/Images/maill.jpg";
 import CTASection from "./CTASection";
 
 
@@ -2491,18 +2492,17 @@ export default function Email() {
 
                         </div>
 
-                        {/* RIGHT VIDEO */}
-                        <div className="w-full flex items-center justify-center p-6">
+<div className="relative flex justify-end">
 
-                            <video
-                                autoPlay
-                                loop
-                                muted
-                                playsInline
-                                className="w-full max-w-[700px] h-auto object-contain rounded-[10px]"
-                            >
-                                <source src={mail19} type="video/mp4" />
-                            </video>
+                            <div className="w-full max-w-[900px] h-[510px] rounded-[1px] overflow-hidden">
+
+                                <img
+                                    src={maill}
+                                    alt="Campaign"
+                                    className="w-full h-full rounded-[1px]"
+                                />
+
+                            </div>
 
                         </div>
 

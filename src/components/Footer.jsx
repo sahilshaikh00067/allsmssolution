@@ -16,6 +16,8 @@ import { FaXTwitter } from "react-icons/fa6";
 
 import finallogo from "../assets/Images/finallogo.png";
 import meta from "../assets/Images/meta.svg";
+import google from "../assets/Images/google.png";
+
 
 const Footer = () => {
 
@@ -324,21 +326,23 @@ const Footer = () => {
 
                         {/* META IMAGE */}
                         <div className="mt-10 flex xl:justify-end">
-
                             <a
                                 href="https://www.facebook.com/business/partner-directory/search?solution_type=messaging&ref=pd_home_hero_cta&id=5412005225590465&section=overview"
                                 target="_blank"
                                 rel="noreferrer"
+                                className="flex items-center gap-4"
                             >
-
+                                <img
+                                    src={google}
+                                    alt="Google Partner"
+                                    className="h-20 rounded-2xl object-contain hover:scale-105 transition-all duration-300"
+                                />
                                 <img
                                     src={meta}
                                     alt="Meta Business Partner"
                                     className="h-20 object-contain hover:scale-105 transition-all duration-300"
                                 />
-
                             </a>
-
                         </div>
                     </div>
 
