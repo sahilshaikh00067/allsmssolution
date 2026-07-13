@@ -23,7 +23,7 @@ const Products = () => {
             title: "Hello",
             subtitle: "Empower your employees, Support your customers.",
             image: hello,
-            bg: "bg-[#b08d37]",
+            bg: "bg-[#1e3a5f]", // deep professional navy
             link: "/hello"
         },
         {
@@ -32,7 +32,7 @@ const Products = () => {
             title: "Campaign",
             subtitle: "Boost audience engagement through smart Platform.",
             image: campaign,
-            bg: "bg-[#8b59bd]",
+            bg: "bg-[#5b3a8e]", // rich royal purple
             link: "/campaign"
         },
         {
@@ -41,7 +41,7 @@ const Products = () => {
             title: "Segmento",
             subtitle: "Customer segmentation by their actions or events.",
             image: segmento,
-            bg: "bg-[#c24f98]",
+            bg: "bg-[#0f766e]", // deep teal
             link: "/segmento"
         },
         {
@@ -50,7 +50,7 @@ const Products = () => {
             title: "OTP",
             subtitle: "Quick and reliable multichannel OTP verification",
             image: otp,
-            bg: "bg-[#6099e0]",
+            bg: "bg-[#1d4ed8]", // strong professional blue
             link: "/otp"
         }
     ];
@@ -81,19 +81,19 @@ const Products = () => {
                                             />
                                         </div>
 
-                                        <p className="text-[13px] tracking-[3px] text-[#7a4bb7] font-medium uppercase">
+                                        <p className="text-[13px] tracking-[3px] text-white/70 font-medium uppercase">
                                             {item.tag}
                                         </p>
 
-                                        <h2 className="text-[36px] font-bold text-[#111827] mt-4 leading-none">
+                                        <h2 className="text-[36px] font-bold text-white mt-4 leading-none">
                                             {item.title}
                                         </h2>
 
-                                        <p className="text-[17px] leading-[30px] text-[#111827] mt-5 max-w-[380px]">
+                                        <p className="text-[17px] leading-[30px] text-white/90 mt-5 max-w-[380px]">
                                             {item.subtitle}
                                         </p>
 
-                                        <span className="flex items-center gap-2 mt-7 text-[17px] font-semibold text-[#111827] hover:text-[#9e892c] transition-all duration-300 group">
+                                        <span className="flex items-center gap-2 mt-7 text-[17px] font-semibold text-white hover:text-white/70 transition-all duration-300 group">
                                             Learn more
                                             <span className="text-[22px] group-hover:translate-x-2 transition duration-300">
                                                 ›
