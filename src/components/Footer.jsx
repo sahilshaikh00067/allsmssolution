@@ -56,30 +56,6 @@ const Footer = () => {
                             <Link to="/otp" className="hover:text-white transition">
                                 OTP
                             </Link>
-
-                        </div>
-
-                        {/* UTILITIES */}
-                        <h3 className="text-[20px] font-semibold mt-10 mb-6">
-
-                            Utilities
-
-                        </h3>
-
-                        <div className="flex flex-col gap-3 text-[15px] text-[#d1d5db]">
-
-                            <Link to="/url-shortener" className="hover:text-white transition">
-                                URL Shortener
-                            </Link>
-
-                            <Link to="/knowledgebase" className="hover:text-white transition">
-                                KnowledgeBase
-                            </Link>
-
-                            <Link to="/whatsapp-link-generator" className="hover:text-white transition">
-                                WhatsApp Link Generator
-                            </Link>
-
                             <Link to="/whatsapp" className="hover:text-white transition">
                                 WhatsApp Chatbot
                             </Link>
@@ -128,28 +104,6 @@ const Footer = () => {
 
                         </div>
 
-                        {/* RESOURCES */}
-                        <h3 className="text-[20px] font-semibold mt-10 mb-6">
-
-                            Resources
-
-                        </h3>
-
-                        <div className="flex flex-col gap-3 text-[15px] text-[#d1d5db]">
-
-                            <Link to="/contact" className="hover:text-white transition">
-                                Guide
-                            </Link>
-
-                            <Link to="/sms" className="hover:text-white transition">
-                                FAQ
-                            </Link>
-
-                            <Link to="/rcs" className="hover:text-white transition">
-                                API Documentation
-                            </Link>
-
-                        </div>
 
                     </div>
 
@@ -168,7 +122,7 @@ const Footer = () => {
                                 About us
                             </Link>
 
-                            <Link to="/contact-us" className="hover:text-white transition">
+                            <Link to="/contact" className="hover:text-white transition">
                                 Contact Us
                             </Link>
 
@@ -180,24 +134,8 @@ const Footer = () => {
                                 All SMS Solution for startups
                             </Link>
 
-                            <Link to="/" className="hover:text-white transition">
-                                Partners & integrations
-                            </Link>
-
-                            <Link to="/" className="hover:text-white transition">
-                                Become a partner
-                            </Link>
-
                             <Link to="/about" className="hover:text-white transition">
                                 Career
-                            </Link>
-
-                            <Link to="/" className="hover:text-white transition">
-                                Certificates
-                            </Link>
-
-                            <Link to="/" className="hover:text-white transition">
-                                Compare
                             </Link>
 
                         </div>
