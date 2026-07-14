@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import otpicon from "../assets/Images/otpicon.svg";
-import otp1 from "../assets/Images/otp1.webp";
+import otp1 from "../assets/Images/otp1.jpg";
 import otp2 from "../assets/Images/otp2.mp4";
-import otp3 from "../assets/Images/otp3.jpeg";
+import otp3 from "../assets/Images/otp3.jpg";
 import otp4 from "../assets/Images/otp4.mp4";
 import otp5 from "../assets/Images/otp5.mp4";
 import otp6 from "../assets/Images/otp6.jpg";
-import otp7 from "../assets/Images/otp7.webp";
-import otp8 from "../assets/Images/otp8.webp";
+import otp7 from "../assets/Images/otp7.jpg";
+import otp8 from "../assets/Images/otp8.jpg";
 import CTASection from "./CTASection";
 
 
