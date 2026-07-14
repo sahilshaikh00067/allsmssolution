@@ -38,11 +38,11 @@ const Products = () => {
         {
             icon: segmentoicon,
             tag: "CUSTOMER DATA PLATFORM",
-            title: "Segmento",
+            title: "Industry",
             subtitle: "Customer segmentation by their actions or events.",
             image: segmento,
             bg: "bg-[#0f766e]", // deep teal
-            link: "/segmento"
+            link: "/industry"
         },
         {
             icon: otpicon,

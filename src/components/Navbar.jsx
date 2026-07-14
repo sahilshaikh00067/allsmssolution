@@ -48,7 +48,7 @@ const Navbar = () => {
     const applications = [
         { name: "Hello", desc: "Ticketing and Chat", icon: helloicon, to: "/hello" },
         { name: "Campaign", desc: "Event-based Automation", icon: campaignicon, to: "/campaign" },
-        { name: "Segment", desc: "Contact Management", icon: segmentoicon, to: "/segmento" },
+        { name: "Industry", desc: "Contact Management", icon: segmentoicon, to: "/industry" },
         { name: "OTP", desc: "Simplified OTP Platform", icon: otpicon, to: "/otp" }
     ];
 

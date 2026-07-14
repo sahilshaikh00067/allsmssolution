@@ -121,7 +121,7 @@ const PrivacyPolicy = () => {
                     </div>
                     <div>
                         <h3 className="text-[18px] font-semibold mb-1">4. Hosting & Infrastructure</h3>
-                        <p>All SMS Solution's systems and databases are hosted on secure cloud infrastructure. These partners maintain industry-standard certifications (ISO 27001, SOC 2, etc.) and comply with regional data-transfer and security obligations.</p>
+                        <p>All SMS Solution's systems and databases are hosted on secure cloud infrastructure. These partners maintain segmento-standard certifications (ISO 27001, SOC 2, etc.) and comply with regional data-transfer and security obligations.</p>
                     </div>
                     <div>
                         <h3 className="text-[18px] font-semibold mb-1">5. Analytics, CRM & Support Tools</h3>
@@ -236,7 +236,7 @@ const PrivacyPolicy = () => {
                 <h2 className="text-[26px] font-bold mb-4">How do we protect your information?</h2>
                 <div className="flex flex-col gap-4 text-[16px] leading-[30px] text-gray-700">
                     <p>An external PCI-compliant payment gateway (Stripe, Inc, Razorpay, and PayPal) handles all credit card transactions, and we conduct regular vulnerability checks to prevent security issues.</p>
-                    <p>Your personal information is securely stored behind protected networks and is only accessible by a limited number of individuals with special access rights, who are required to maintain the confidentiality of this information. Additionally, all sensitive information you provide is encrypted using industry-standard protocols and is transmitted via TLS/SSL technology. We offer 2FA (2-factor authentication) for every account, providing an extra layer of security for your personal data. This ensures the confidentiality, integrity, and availability of our customers' personal data in case of data loss or security breaches.</p>
+                    <p>Your personal information is securely stored behind protected networks and is only accessible by a limited number of individuals with special access rights, who are required to maintain the confidentiality of this information. Additionally, all sensitive information you provide is encrypted using segmento-standard protocols and is transmitted via TLS/SSL technology. We offer 2FA (2-factor authentication) for every account, providing an extra layer of security for your personal data. This ensures the confidentiality, integrity, and availability of our customers' personal data in case of data loss or security breaches.</p>
                     <p>In the event of a security breach, we have a policy to conduct an immediate investigation of the incident and report it to the competent data protection authority within 72 hours or less. We also notify all affected data subjects of a high-risk data breach incident.</p>
                 </div>
             </div>

@@ -27,7 +27,7 @@ const FAQ = () => {
         {
             question: "Is All SMS Solution secure?",
             answer:
-                "Security is a top priority at All SMS Solution. We implement industry-standard protocols and encryption techniques to ensure the confidentiality and integrity of your data. Our enterprise cloud communications platform offers features like two-factor authentication and OTP verification to enhance security and protect sensitive information.",
+                "Security is a top priority at All SMS Solution. We implement segmento-standard protocols and encryption techniques to ensure the confidentiality and integrity of your data. Our enterprise cloud communications platform offers features like two-factor authentication and OTP verification to enhance security and protect sensitive information.",
         },
 
         {

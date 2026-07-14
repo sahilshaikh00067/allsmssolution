@@ -2520,7 +2520,7 @@ export default function Email() {
 
                         <h2 className="text-[28px] lg:text-[35px] font-bold text-[#111827] leading-tight">
 
-                            Best-in-class email delivery and industry-leading results
+                            Best-in-class email delivery and segmento-leading results
                         </h2>
 
                     </div>

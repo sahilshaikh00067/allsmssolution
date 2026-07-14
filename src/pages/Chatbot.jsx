@@ -109,7 +109,7 @@ const features2 = [
             "Arrange conversational flows with drag-and-drop blocks—add texts, questions, quick replies, action steps, API calls, and more, with ai chatbot support.",
     },
     {
-        title: "Pre-Built Industry Templates",
+        title: "Pre-Built segmento Templates",
         description:
             "E-commerce order flows, appointment schedulers, lead capture bots, survey bots, feedback collectors, etc.",
     },

@@ -9,7 +9,6 @@ import Contact from "./pages/Contact";
 import { Routes, Route } from "react-router-dom";
 import Hello from "./pages/Hello";
 import Campaign from "./pages/Campaign";
-import Segmento from "./pages/Segmento";
 import Otp from "./pages/Otp";
 import Sms from "./pages/Sms";
 import ScrollToTop from "./components/ScrollToTop";
@@ -24,6 +23,7 @@ import Terms from "./pages/Terms";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Chatbot from "./pages/Chatbot";
+import Industry from "./pages/Industry";
 
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/hello" element={<Hello />} />
         <Route path="/campaign" element={<Campaign />} />
-        <Route path="/segmento" element={<Segmento />} />
+        <Route path="/industry" element={<Industry />} />
         <Route path="/otp" element={<Otp />} />
         <Route path="/sms" element={<Sms />} />
         <Route path="/email" element={<Email />} />

@@ -45,8 +45,8 @@ const Footer = () => {
                                 Hello
                             </Link>
 
-                            <Link to="/segmento" className="hover:text-white transition">
-                                Segmento
+                            <Link to="/industry" className="hover:text-white transition">
+                                Industry
                             </Link>
 
                             <Link to="/campaign" className="hover:text-white transition">
@@ -152,39 +152,6 @@ const Footer = () => {
                                 alt="All SMS Solution"
                                 className="h-35 object-contain"
                             />
-                        </div>
-
-                        {/* DOWNLOAD APPS */}
-                        <div className="mt-8">
-
-                            <h3 className="text-[20px] font-semibold mb-4">
-
-                                Download Apps
-
-                            </h3>
-
-                            <div className="flex xl:justify-end items-center gap-4 text-[28px]">
-
-                                <a
-                                    href="https://play.google.com"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="hover:text-[#25D366] transition"
-                                >
-                                    <FaAndroid />
-                                </a>
-
-                                <a
-                                    href="https://www.apple.com/app-store/"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="hover:text-[#cbd5e1] transition"
-                                >
-                                    <FaApple />
-                                </a>
-
-                            </div>
-
                         </div>
 
                         {/* SOCIAL MEDIA */}

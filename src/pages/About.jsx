@@ -271,7 +271,7 @@ const About = () => {
               AWARDS AND RECOGNITIONS
             </span>
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-7">
-              Celebrating Our Achievements and Industry Recognitions
+              Celebrating Our Achievements and segmento Recognitions
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
