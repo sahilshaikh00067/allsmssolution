@@ -5,7 +5,7 @@ import sms from "../assets/Images/sms.svg";
 import email from "../assets/Images/email.svg";
 import whatsapp from "../assets/Images/whatsapp.svg";
 import voice from "../assets/Images/voice.svg";
-import numbers from "../assets/Images/numbers.svg";
+import helloicon from "../assets/Images/helloicon.svg";
 import rcsicon from "../assets/Images/rcsicon.svg";
 
 const Channels = () => {
@@ -42,10 +42,10 @@ const Channels = () => {
             link: "/rcs"
         },
         {
-            title: "Numbers",
-            image: numbers,
-            desc: "Unlock global markets with virtual numbers, surveys, auto responses and missed call services.",
-            link: "/numbers"
+            title: "Chatbot",
+            image: helloicon,
+            desc: "Automate Customer Conversation with AI Chatbot",
+            link: "/chatbot"
         }
     ];
 

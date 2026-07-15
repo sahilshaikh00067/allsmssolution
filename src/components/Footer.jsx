@@ -57,11 +57,7 @@ const Footer = () => {
                                 OTP
                             </Link>
                             <Link to="/whatsapp" className="hover:text-white transition">
-                                WhatsApp Chatbot
-                            </Link>
-
-                            <Link to="/chatbot" className="hover:text-white transition">
-                                Chatbot
+                                WhatsApp Api
                             </Link>
 
                         </div>
@@ -98,9 +94,9 @@ const Footer = () => {
                                 Voice
                             </Link>
 
-                            <Link to="/numbers" className="hover:text-white transition">
-                                Numbers
-                            </Link>
+                            <Link to="/chatbot" className="hover:text-white transition">
+                                Chatbot
+                            </Link> 
 
                         </div>
 
@@ -118,20 +114,8 @@ const Footer = () => {
 
                         <div className="flex flex-col gap-3 text-[15px] text-[#d1d5db]">
 
-                            <Link to="/about" className="hover:text-white transition">
-                                About us
-                            </Link>
-
                             <Link to="/contact" className="hover:text-white transition">
                                 Contact Us
-                            </Link>
-
-                            <Link to="/contact" className="hover:text-white transition">
-                                Developers
-                            </Link>
-
-                            <Link to="/about" className="hover:text-white transition">
-                                All SMS Solution for startups
                             </Link>
 
                             <Link to="/about" className="hover:text-white transition">

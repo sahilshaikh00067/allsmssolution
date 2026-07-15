@@ -15,7 +15,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Whatsapp from "./pages/Whatsapp";
 import Email from "./pages/Email";
 import Voice from "./pages/Voice";
-import Numbers from "./pages/Numbers";
+// import Numbers from "./pages/Numbers";
 import UrlShorter from "./pages/UrlShorter";
 import Knowlodge from "./pages/Knowlodge";
 import RCS from "./pages/RCS";
@@ -41,7 +41,7 @@ function App() {
         <Route path="/email" element={<Email />} />
         <Route path="/whatsapp" element={<Whatsapp />} />
         <Route path="/voice" element={<Voice />} />
-        <Route path="/numbers" element={<Numbers />} />
+        {/* <Route path="/numbers" element={<Numbers />} /> */}
         <Route path="/rcs" element={<RCS />} />
         <Route path="/chatbot" element={<Chatbot />} />
         {/* <Route path="/url-shortner" element={<UrlShorter />} /> */}
