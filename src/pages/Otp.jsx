@@ -28,7 +28,7 @@ export default function Otp() {
                 <div className="w-full">
 
                     {/* BIGGER IMAGE SIDE */}
-                    <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] items-center gap-10">
+                    <div className="grid grid-cols-1 lg:grid-cols-[50%_50%] items-center gap-10">
 
                         {/* LEFT SIDE */}
                         <div className="px-2">
@@ -105,7 +105,6 @@ export default function Otp() {
                 </div>
 
             </section>
-
 
             <section className="w-full py-10 bg-gray-50">
 
@@ -364,7 +363,7 @@ export default function Otp() {
                                 <img
                                     src={otp3}
                                     alt="Magic Link"
-                                    className="w-full h-[420px] object-contain"
+                                    className="w-full max-w-[700px] h-[550px] object-contain"
                                 />
 
                             </div>
@@ -376,7 +375,6 @@ export default function Otp() {
                 </div>
 
             </section>
-
 
             <section className="w-full py-3 bg-gray-50">
 

@@ -230,7 +230,7 @@ export default function Industry() {
                                 <img
                                     src={ind1}
                                     alt="Retail & E-commerce"
-                                    className="w-full max-w-[650px] h-[600px] object-cover rounded-[8px]"
+                                    className="w-full max-w-[520px] h-[600px] object-cover rounded-[8px]"
                                 />
 
                             </div>
@@ -348,7 +348,7 @@ export default function Industry() {
                                 <img
                                     src={ind2}
                                     alt="Restaurants & Hospitality"
-                                    className="w-full h-[420px] object-cover"
+                                    className="w-full max-w-[700px] h-[600px] object-cover"
                                 />
 
                             </div>
@@ -488,7 +488,7 @@ export default function Industry() {
                             <img
                                 src={ind3}
                                 alt="Travel & Tourism"
-                                className="w-full max-w-[700px] h-[420px] object-cover rounded-[8px]"
+                                className="w-full max-w-[540px] h-[420px] object-cover rounded-[8px]"
                             />
 
                         </div>
@@ -627,7 +627,7 @@ export default function Industry() {
                                 <img
                                     src={ind4}
                                     alt="Healthcare & Wellness"
-                                    className="w-full h-[300px] object-cover"
+                                    className="w-full max-w-[720px] h-[450px] object-cover"
                                 />
 
                             </div>
@@ -755,7 +755,7 @@ export default function Industry() {
                                 <img
                                     src={ind5}
                                     alt="Real Estate"
-                                    className="w-full h-[420px] object-cover"
+                                    className="w-full max-w-[720px] h-[450px] object-cover"
                                 />
 
                             </div>
