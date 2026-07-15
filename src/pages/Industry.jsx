@@ -9,6 +9,8 @@ import ind4 from "../assets/Images/ind4.jpg";
 import ind5 from "../assets/Images/ind5.jpg";
 import ind6 from "../assets/Images/ind6.jpg";
 import ind8 from "../assets/Images/ind8.jpg";
+import { Link } from "react-router-dom";
+
 
 
 export default function Industry() {
@@ -35,7 +37,7 @@ export default function Industry() {
 
                                 <h3 className="text-[26px] font-semibold text-[#111827]">
 
-                                    segmento
+                                    Industry
 
                                 </h3>
 
@@ -44,32 +46,37 @@ export default function Industry() {
                             {/* SMALL TITLE */}
                             <p className="uppercase tracking-[3px] text-[#4885bd] text-[18px] mb-5">
 
-                                Built For Every segmento
+                                Built For Every Industry
 
                             </p>
 
                             {/* MAIN HEADING */}
                             <h1 className="text-[35px] lg:text-[45px] leading-[1.08] font-bold text-[#1f2937] max-w-[850px]">
 
-                                Communication Infrastructure Engineered For Every Sector
+                                Communication Solutions Tailored For Every Industry
 
                             </h1>
 
                             {/* DESCRIPTION */}
-                            <p className="text-[23px] leading-[34px] text-[#4b5563] mt-3 max-w-[850px]">
+                            <p className="text-[20px] leading-[34px] text-[#4b5563] mt-3 max-w-[850px]">
 
-                                From e-commerce to healthcare, banking to logistics — our cloud communication APIs are trusted by businesses across sectors to engage customers reliably, at scale.
-
+                                Empower businesses across every industry with reliable, secure, and scalable
+                                communication solutions. From healthcare and financial services to retail,
+                                hospitality, real estate, travel, fitness, and automotive, our omnichannel
+                                platform helps organizations connect with customers through WhatsApp, SMS,
+                                Email, Voice, and RCS—driving engagement, automation, and business growth.
                             </p>
 
                             {/* BUTTON */}
-                            <div className="flex flex-wrap items-center gap-3 mt-5">
+                            <div className="flex flex-wrap items-center gap-3 mt-15">
+                                <Link to='/contact'>
 
-                                <button className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[18px] font-medium transition-all duration-300 border border-[#1a212b]">
+                                    <button className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[18px] font-medium transition-all duration-300 border border-[#1a212b]">
 
-                                    Get Started For Free
+                                        Get Started For Free
 
-                                </button>
+                                    </button>
+                                </Link>
 
                             </div>
 
@@ -78,7 +85,7 @@ export default function Industry() {
                         {/* RIGHT SIDE IMAGE */}
                         <div className="relative flex justify-end">
 
-                            <div className="w-full max-w-[800px] h-[510px] rounded-[10px] overflow-hidden">
+                            <div className="w-full max-w-[700px] h-[510px] rounded-[10px] overflow-hidden">
 
                                 <img
                                     src={ind}
@@ -223,7 +230,7 @@ export default function Industry() {
                                 <img
                                     src={ind1}
                                     alt="Retail & E-commerce"
-                                    className="w-full max-w-[850px] h-[400px] object-cover rounded-[8px]"
+                                    className="w-full max-w-[650px] h-[600px] object-cover rounded-[8px]"
                                 />
 
                             </div>
