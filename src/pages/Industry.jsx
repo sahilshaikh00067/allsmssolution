@@ -85,7 +85,7 @@ export default function Industry() {
                         {/* RIGHT SIDE IMAGE */}
                         <div className="relative flex justify-end">
 
-                            <div className="w-full max-w-[700px] h-[510px] rounded-[10px] overflow-hidden">
+                            <div className="w-full max-w-[700px] rounded-[10px] overflow-hidden">
 
                                 <img
                                     src={ind}
