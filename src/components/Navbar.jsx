@@ -58,7 +58,7 @@ const Navbar = () => {
         { name: "RCS", icon: rcsicon, to: "/rcs" },
         { name: "WhatsApp", icon: whatsapp, to: "/whatsapp" },
         { name: "Voice", icon: voice, to: "/voice" },
-                { name: "Chatbot", icon: helloicon, to: "/chatbot" },
+        { name: "Chatbot", icon: helloicon, to: "/chatbot" },
     ];
 
     return (

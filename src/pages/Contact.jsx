@@ -179,7 +179,7 @@ export default function GetInTouch() {
 
               {[
                 { num: "+91 9967007649", whatsapp: true },
-                { num: "+91 7900097353", whatsapp: false },
+                { num: "+91 7900097353", whatsapp: true },
               ].map(({ num, whatsapp }) => (
                 <div key={num} className="gt-phone-row">
                   <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="#5b7fff" strokeWidth={2}>{PHONE_ICON_PATH}</svg>

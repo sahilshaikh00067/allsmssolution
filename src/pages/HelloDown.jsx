@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import helloone from "../assets/Images/helloone.webp";
-import hellotwo from "../assets/Images/hellotwo.png";
-import hellothird from "../assets/Images/hellothird.webp";
-import hellofive from "../assets/Images/hellofive.webp";
+import helloone from "../assets/Images/helloone.jpg";
+import hellotwo from "../assets/Images/hellotwo.jpg";
+import hellothird from "../assets/Images/hellothird.jpg";
+import hellofive from "../assets/Images/hellofive.png";
 import hellov1 from "../assets/Images/hellov1.mp4";
-import hellosix from "../assets/Images/hellosix.webp";
-import helloseven from "../assets/Images/helloseven.webp";
-import helloeight from "../assets/Images/helloeight.webp";
-import hellonine from "../assets/Images/hellonine.webp";
+import hellosix from "../assets/Images/hellosix.png";
+import helloseven from "../assets/Images/helloseven.jpg";
+import helloeight from "../assets/Images/helloeight.jpg";
+import hellonine from "../assets/Images/hellonine.jpg";
 import FAQ from "./FAQ";
 
 
