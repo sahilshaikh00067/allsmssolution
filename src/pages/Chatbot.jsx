@@ -15,6 +15,7 @@ import chatbot8 from "../assets/Images/chatbot8.mp4";
 import chatbot9 from "../assets/Images/chatbot9.jpg";
 import chatbot10 from "../assets/Images/chatbot10.jpg";
 import CTASection from "./CTASection";
+import LeadPopup from "../components/Leadpopup";
 
 
 
@@ -189,9 +190,16 @@ const Chatbot = () => {
 
                         {/* BUTTON */}
                         <div className="mt-4">
-                            <button className="bg-white hover:bg-[#9d8431] text-[#111827] border border-[#c99a15] px-6 py-2 rounded-[8px] text-[18px] font-normal transition-all duration-300">
+                                <LeadPopup
+                                    renderTrigger={(open) => (
+                                        <button
+                                            onClick={open}
+                            
+                            className="bg-white hover:bg-[#9d8431] text-[#111827] border border-[#c99a15] px-6 py-2 rounded-[8px] text-[18px] font-normal transition-all duration-300">
                                 Get Started 
                             </button>
+                                    )}
+                                    />
                         </div>
 
                     </div>

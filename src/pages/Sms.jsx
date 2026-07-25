@@ -9,6 +9,7 @@ import sms6 from "../assets/Images/sms6.jpg"
 import sms7 from "../assets/Images/sms7.jpg"
 import FAQ from './FAQ'
 import CTASection from './CTASection'
+import LeadPopup from '../components/Leadpopup'
 
 
 
@@ -66,12 +67,18 @@ export default function Sms() {
                         {/* BUTTON */}
                         <div className="flex flex-wrap items-center gap-3 mt-8">
 
-                            <button className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300 border border-[#1a212b]">
+                            <LeadPopup
+                                renderTrigger={(open) => (
+                                    <button
+                                        onClick={open}
 
-                                Get Started
+                                        className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300 border border-[#1a212b]">
 
-                            </button>
+                                        Get Started
 
+                                    </button>
+                                )}
+                            />
                         </div>
 
                     </div>

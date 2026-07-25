@@ -9,7 +9,7 @@ import ind4 from "../assets/Images/ind4.jpg";
 import ind5 from "../assets/Images/ind5.jpg";
 import ind6 from "../assets/Images/ind6.jpg";
 import ind8 from "../assets/Images/ind8.jpg";
-import { Link } from "react-router-dom";
+import LeadPopup from "../components/Leadpopup";
 
 
 
@@ -69,14 +69,18 @@ export default function Industry() {
 
                             {/* BUTTON */}
                             <div className="flex flex-wrap items-center gap-3 mt-15">
-                                <Link to='/contact'>
+                                <LeadPopup
+                                    renderTrigger={(open) => (
+                                        <button
+                                            onClick={open}
 
-                                    <button className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[18px] font-medium transition-all duration-300 border border-[#1a212b]">
+                                            className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[18px] font-medium transition-all duration-300 border border-[#1a212b]">
 
-                                        Get Started For Free
+                                            Get Started For Free
 
-                                    </button>
-                                </Link>
+                                        </button>
+                                    )}
+                                />
 
                             </div>
 

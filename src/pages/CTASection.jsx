@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import LeadPopup from "../components/Leadpopup";
 
 const CTASection = () => {
 
@@ -46,14 +47,16 @@ const CTASection = () => {
                         </Link> */}
 
                         {/* GET STARTED */}
-                        <Link
-                            to="/contact"
-                            className="px-4 py-2 bg-[#111827] text-white text-[18px] font-semibold rounded-[6px] hover:bg-[#2a3b69] transition-all duration-300"
-                        >
-
-                            Get started
-
-                        </Link>
+<LeadPopup
+                            renderTrigger={(open) => (
+                                <button
+                                    onClick={open}
+                                    className="px-4 py-2 bg-[#111827] text-white text-[18px] font-semibold rounded-[6px] hover:bg-[#2a3b69] transition-all duration-300"
+                                >
+                                    Get started
+                                </button>
+                            )}
+                        />
 
                     </div>
 

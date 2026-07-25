@@ -8,7 +8,7 @@ import campaign5 from "../assets/Images/campaign5.jpeg";
 import campaign6 from "../assets/Images/campaign6.svg";
 import FAQ from './FAQ';
 import CTASection from './CTASection';
-import { Link } from "react-router-dom";
+import LeadPopup from "../components/Leadpopup";
 
 
 export default function Campaign() {
@@ -68,13 +68,16 @@ export default function Campaign() {
 
                             {/* BUTTON */}
                             <div className="flex flex-wrap items-center gap-3 mt-5">
-                                <Link to='/contact'>
-                                    <button className="bg-[#000000] hover:bg-[#1b2738] text-[#fafafa] px-4 py-2 rounded-[6px] text-[18px] font-medium transition-all duration-300 border border-[#1a212b]">
-
-                                        Get Started For Free →
-
-                                    </button>
-                                </Link>
+                                <LeadPopup
+                                    renderTrigger={(open) => (
+                                        <button
+                                            onClick={open}
+                                            className="bg-[#000000] hover:bg-[#1b2738] text-[#fafafa] px-4 py-2 rounded-[6px] text-[18px] font-medium transition-all duration-300 border border-[#1a212b]"
+                                        >
+                                            Get Started For Free →
+                                        </button>
+                                    )}
+                                />
                             </div>
 
                         </div>
@@ -170,7 +173,7 @@ export default function Campaign() {
                                 <p className="text-[15px] leading-[28px] text-[#282d33] mt-3">
 
                                     Drag and drop to create an omnichannel flow with
-                                    ‘if-then’ scenarios. Choose when you need to
+                                    'if-then' scenarios. Choose when you need to
                                     initiate an SMS, mail, or messaging conversation
                                     in a single workflow.
 
@@ -331,10 +334,6 @@ export default function Campaign() {
             </section>
             <FAQ />
             <CTASection />
-
-
-
-
 
         </>
     )

@@ -11,6 +11,7 @@ import rcs11 from "../assets/Images/rcs11.jpg";
 import rcs12 from "../assets/Images/rcs12.jpg";
 import rcs13 from "../assets/Images/rcs13.jpg";
 import rcsv from "../assets/Images/rcsv.mp4";
+import LeadPopup from "../components/Leadpopup";
 
 
 const RCS = ({
@@ -47,11 +48,17 @@ const RCS = ({
                             {description}
                         </p>
 
-                        <a href={ctaLink}>
-                            <button className="bg-[#111827] hover:bg-[#9e892c] transition-colors text-white px-6 py-3 rounded-md text-sm font-medium">
+                                <LeadPopup
+                                    renderTrigger={(open) => (
+                                        <button
+                                            onClick={open} 
+                            
+                            className="bg-[#111827] hover:bg-[#9e892c] transition-colors text-white px-6 py-3 rounded-md text-sm font-medium">
                                 {ctaLabel}
                             </button>
-                        </a>
+                                    )}
+                                    />
+
                     </div>
 
                     {/* RIGHT VIDEO */}

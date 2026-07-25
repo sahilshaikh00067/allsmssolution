@@ -24,12 +24,14 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Chatbot from "./pages/Chatbot";
 import Industry from "./pages/Industry";
+import LeadPopup from "./components/Leadpopup";
 
 function App() {
   return (
     <>
       <Navbar />
       <ScrollToTop />
+      <LeadPopup/>
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -60,3 +62,4 @@ function App() {
 }
 
 export default App;
+

@@ -22,6 +22,7 @@ import whatsapp19 from "../assets/Images/whatsapp19.jpg";
 import whatsapp20 from "../assets/Images/whatsapp20.jpg";
 import FAQ from "./FAQ";
 import CTASection from "./CTASection";
+import LeadPopup from "../components/Leadpopup";
 
 
 
@@ -86,19 +87,25 @@ export default function Whatsapp() {
                             {/* BUTTONS */}
                             <div className="flex flex-wrap items-center gap-3 mt-5">
 
-                                {/* GET STARTED */}
-                                <button className="bg-black hover:bg-[#253254] text-white px-2 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300 border">
+                                <LeadPopup
+                                    renderTrigger={(open) => (
+                                        <button
+                                            onClick={open}
 
-                                    Get Started
+                                            className="bg-black hover:bg-[#253254] text-white px-2 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300 border">
 
-                                </button>
+                                            Get Started
+
+                                        </button>
+                                    )}
+                                />
 
                                 {/* MEETING */}
-                                <button className="border border-black hover:bg-black text-black hover:text-white px-2 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300">
+                                {/* <button className="border border-black hover:bg-black text-black hover:text-white px-2 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300">
 
                                     Schedule a Meeting
 
-                                </button>
+                                </button> */}
 
                             </div>
 
@@ -116,7 +123,7 @@ export default function Whatsapp() {
                                     muted
                                     loop
                                     playsInline
-                                    className="w-full h-full object-cover rounded-[40px]"
+                                    className="w-full max-h-[590px] object-cover rounded-[40px]"
                                 />
 
                             </div>
@@ -172,13 +179,17 @@ export default function Whatsapp() {
                                 folder. Just results.
                             </p>
 
-                            <a
-                                href="/contact"
-                                className="inline-flex items-center gap-1 text-[#2563eb] text-1xl font-medium hover:gap-4 transition-all duration-300"
-                            >
-                                Talk to Us
-                                <span>➜</span>
-                            </a>
+                            <LeadPopup
+                                renderTrigger={(open) => (
+                                    <button
+                                        onClick={open}
+                                        className="inline-flex items-center gap-1 text-[#2563eb] text-1xl font-medium hover:gap-4 transition-all duration-300"
+                                    >
+                                        Talk to Us
+                                        <span>➜</span>
+                                    </button>
+                                )}
+                            />
                         </div>
                     </div>
 
@@ -244,13 +255,17 @@ export default function Whatsapp() {
                             should be.
                         </p>
 
-                        <a
-                            href="/contact"
+                                <LeadPopup
+                                    renderTrigger={(open) => (
+                                        <button
+                                            onClick={open}
                             className="inline-flex items-center gap-2 text-[#2563eb] text-[16px] font-medium hover:gap-4 transition-all duration-300"
                         >
                             Book A Demo
                             <span>➜</span>
-                        </a>
+                        </button>
+                                    )}
+                                    />
                     </div>
 
                 </div>
@@ -281,14 +296,17 @@ export default function Whatsapp() {
                             <li>• One Unified Inbox for All Chats - Instagram, Emails, Webchat</li>
                             <li>• Real-Time Customer Updates</li>
                         </ul>
-
-                        <a
-                            href="/contact"
+                                <LeadPopup
+                                    renderTrigger={(open) => (
+                                        <button
+                                            onClick={open}
                             className="inline-flex items-center gap-2 text-[#2563eb] text-[16px] font-medium hover:gap-4 transition-all duration-300"
                         >
                             Try WhatsApp Support in Action
                             <span>➜</span>
-                        </a>
+                        </button>
+                                    )}
+                                    />
                     </div>
 
                     {/* RIGHT VIDEO */}
@@ -377,13 +395,18 @@ export default function Whatsapp() {
 
                         </div>
 
-                        <a
-                            href="/contact"
+                        
+                                <LeadPopup
+                                    renderTrigger={(open) => (
+                                        <button
+                                            onClick={open}
                             className="inline-flex items-center gap-2 text-[#2563eb] text-[16   px] font-medium hover:gap-4 transition-all duration-300"
                         >
                             Book a Meeting
                             <span>➜</span>
-                        </a>
+                        </button>
+                                    )}
+                                    />
                     </div>
 
                 </div>
@@ -1816,8 +1839,8 @@ export default function Whatsapp() {
             </section>
 
 
-                <FAQ />
-    <CTASection />
+            <FAQ />
+            <CTASection />
 
 
 

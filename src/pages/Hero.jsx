@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import { ShieldCheck, Zap, Globe2, ArrowRight } from "lucide-react";
 import home1 from "../assets/Images/home1.png";
+import LeadPopup from "../components/Leadpopup";
 
 const logos = ["IVR Call", "Whatsapp Api Services", "RCS SMS", "Bulk SMS", "Voice Call", "Chatbot"];
 
@@ -110,21 +111,31 @@ const Hero = () => {
               custom={3}
               className="flex flex-wrap items-center gap-5 mt-12"
             >
-              <Link to="/contact">
-                <button className="hero-shimmer group relative overflow-hidden rounded-xl bg-[#111827] px-8 py-4 text-white font-medium transition-all duration-300 hover:scale-105 shadow-[0_10px_30px_-8px_rgba(17,24,39,0.5)]">
-                  <span className="relative z-10 flex items-center gap-2">
-                    Get Started
-                    <ArrowRight size={17} className="transition-transform duration-300 group-hover:translate-x-1" />
-                  </span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#4959ab] to-[#6d7cff] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                </button>
-              </Link>
+              <LeadPopup
+                renderTrigger={(open) => (
+                  <button
+                    onClick={open}
+                    className="hero-shimmer group relative overflow-hidden rounded-xl bg-[#111827] px-8 py-4 text-white font-medium transition-all duration-300 hover:scale-105 shadow-[0_10px_30px_-8px_rgba(17,24,39,0.5)]"
+                  >
+                    <span className="relative z-10 flex items-center gap-2">
+                      Get Started
+                      <ArrowRight size={17} className="transition-transform duration-300 group-hover:translate-x-1" />
+                    </span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#4959ab] to-[#6d7cff] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  </button>
+                )}
+              />
 
-              <Link to="/contact">
-                <button className="rounded-xl border border-[#d1d5db] bg-white/80 backdrop-blur-md px-8 py-4 font-medium text-[#111827] shadow-lg transition-all duration-300 hover:scale-105 hover:border-[#4959ab] hover:text-[#4959ab]">
-                  Live Demo
-                </button>
-              </Link>
+              <LeadPopup
+                renderTrigger={(open) => (
+                  <button
+                    onClick={open}
+                    className="rounded-xl border border-[#d1d5db] bg-white/80 backdrop-blur-md px-8 py-4 font-medium text-[#111827] shadow-lg transition-all duration-300 hover:scale-105 hover:border-[#4959ab] hover:text-[#4959ab]"
+                  >
+                    Live Demo
+                  </button>
+                )}
+              />
             </motion.div>
 
             {/* MINI STATS */}

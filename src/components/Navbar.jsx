@@ -27,6 +27,7 @@ import whatsapp from "../assets/Images/whatsapp.svg";
 import voice from "../assets/Images/voice.svg";
 import numbers from "../assets/Images/numbers.svg";
 
+import LeadPopup from "../components/Leadpopup";
 
 const Navbar = () => {
 
@@ -337,13 +338,16 @@ const Navbar = () => {
 
                     </Link>
 
-                    <Link to="/contact  ">
-
-                        <button className="bg-[#111827] hover:bg-[#9e892c] text-white px-7 py-2.5 rounded-md text-[14px] font-normal transition-all duration-300">
-                            SIGN UP
-                        </button>
-
-                    </Link>
+                    <LeadPopup
+                        renderTrigger={(open) => (
+                            <button
+                                onClick={open}
+                                className="bg-[#111827] hover:bg-[#9e892c] text-white px-7 py-2.5 rounded-md text-[14px] font-normal transition-all duration-300"
+                            >
+                                SIGN UP
+                            </button>
+                        )}
+                    />
 
                 </div>
 
@@ -389,13 +393,16 @@ const Navbar = () => {
 
                     <Link to="/login">Login</Link>
 
-                    <Link to="/signup">
-
-                        <button className="w-full bg-[#111827] text-white py-3 rounded-lg mt-2">
-                            SIGN UP
-                        </button>
-
-                    </Link>
+                    <LeadPopup
+                        renderTrigger={(open) => (
+                            <button
+                                onClick={open}
+                                className="w-full bg-[#111827] text-white py-3 rounded-lg mt-2"
+                            >
+                                SIGN UP
+                            </button>
+                        )}
+                    />
 
                 </div>
 

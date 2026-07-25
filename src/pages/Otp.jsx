@@ -9,6 +9,7 @@ import otp6 from "../assets/Images/otp6.jpg";
 import otp7 from "../assets/Images/otp7.jpg";
 import otp8 from "../assets/Images/otp8.jpg";
 import CTASection from "./CTASection";
+import LeadPopup from "../components/Leadpopup";
 
 
 
@@ -76,11 +77,18 @@ export default function Otp() {
                             {/* BUTTON */}
                             <div className="flex flex-wrap items-center gap-3 mt-5">
 
-                                <button className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[18px] font-medium transition-all duration-300 border border-[#1a212b]">
+                                <LeadPopup
+                                    renderTrigger={(open) => (
+                                        <button
+                                            onClick={open}
+
+                                 className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[18px] font-medium transition-all duration-300 border border-[#1a212b]">
 
                                     Get Started For Free
 
                                 </button>
+                                    )}
+                                />
 
                             </div>
 
