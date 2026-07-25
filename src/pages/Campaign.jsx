@@ -78,6 +78,18 @@ export default function Campaign() {
                                         </button>
                                     )}
                                 />
+
+                                                        <LeadPopup
+                                                            whatsappNumber="918108378154"
+                                                            renderTrigger={(open) => (
+                                                                <button
+                                                                    onClick={open}
+                                                                    className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
+                                                                >
+                                                                    Chatbot
+                                                                </button>
+                                                            )}
+                                                        />
                             </div>
 
                         </div>

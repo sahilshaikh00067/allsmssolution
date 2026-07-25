@@ -12,6 +12,7 @@ import about9 from "../assets/Images/about9.png";
 import about10 from "../assets/Images/about10.png";
 import about11 from "../assets/Images/about11.png";
 import CTASection from "./CTASection";
+import LeadPopup from "../components/Leadpopup";
 
 const stats = [
   { value: "2000+", label: "Registered Users" },
@@ -86,25 +87,25 @@ const solutions = [
     title: "WhatsApp Business API",
     description:
       "Build trust, engage customers, and grow your brand with WhatsApp Business API",
-    image: about8,
+    image: about9,
   },
   {
     title: "Bulk SMS",
     description:
       "Send instant, reliable, and high-volume messages for alerts, promotions, and transactional updates",
-    image: about9,
+    image: about10,
   },
   {
     title: "Voice Solutions",
     description:
       "Scale up your conversion rates through automated outbound calls",
-    image: about10,
+    image: about11,
   },
   {
     title: "RCS Messaging",
     description:
       "Rich media and guided responses give an app-like experience, right in the user's SMS inbox",
-    image: about11,
+    image: about8,
     overlays: [about11, about11],
   },
 ];
@@ -201,13 +202,28 @@ const About = () => {
                 Let&apos;s make communication simpler together.
               </p>
               <div className="mt-10">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center gap-3 px-6 py-2 rounded-sm bg-[#857a18] text-white font-semibold hover:bg-[#061436] transition-all duration-300 shadow-lg"
-                >
-                  Start a free trial
-                  <span className="text-xl">→</span>
-                </Link>
+                                <LeadPopup
+                                    renderTrigger={(open) => (
+                                        <button
+                                            onClick={open} 
+                            
+                            className="bg-[#111827] hover:bg-[#9e892c] transition-colors text-white px-6 py-3 rounded-md text-sm font-medium">
+                            Get Started
+                            </button>
+                                    )}
+                                    />
+
+                                                            <LeadPopup
+                                                                whatsappNumber="918108378154"
+                                                                renderTrigger={(open) => (
+                                                                    <button
+                                                                        onClick={open}
+                                                                        className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
+                                                                    >
+                                                                        Chatbot
+                                                                    </button>
+                                                                )}
+                                                            />
               </div>
             </div>
 

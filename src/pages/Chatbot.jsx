@@ -190,16 +190,28 @@ const Chatbot = () => {
 
                         {/* BUTTON */}
                         <div className="mt-4">
-                                <LeadPopup
-                                    renderTrigger={(open) => (
-                                        <button
-                                            onClick={open}
-                            
-                            className="bg-white hover:bg-[#9d8431] text-[#111827] border border-[#c99a15] px-6 py-2 rounded-[8px] text-[18px] font-normal transition-all duration-300">
-                                Get Started 
-                            </button>
-                                    )}
-                                    />
+                            <LeadPopup
+                                renderTrigger={(open) => (
+                                    <button
+                                        onClick={open}
+
+                                        className="bg-white hover:bg-[#9d8431] text-[#111827] border border-[#c99a15] px-6 py-2 rounded-[8px] text-[18px] font-normal transition-all duration-300">
+                                        Get Started
+                                    </button>
+                                )}
+                            />
+
+                        <LeadPopup
+                            whatsappNumber="918108378154"
+                            renderTrigger={(open) => (
+                                <button
+                                    onClick={open}
+                                    className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
+                                >
+                                    Chatbot
+                                </button>
+                            )}
+                        />
                         </div>
 
                     </div>

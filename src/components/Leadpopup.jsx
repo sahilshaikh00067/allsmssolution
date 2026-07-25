@@ -10,7 +10,7 @@ const SERVICES = [
   "Chatbot System",
 ];
 
-export default function LeadPopup({ buttonText = "", renderTrigger }) {
+export default function LeadPopup({ buttonText = "", renderTrigger, whatsappNumber = "919920067649" }) {
   const [open, setOpen] = useState(false);
   const [form, setForm] = useState({
     fullName: "",
@@ -50,7 +50,6 @@ Address: ${form.address}%0A
 Business Type: ${form.businessType}%0A
 Services: ${form.services.join(", ")}`;
 
-    const whatsappNumber = "919920067649";
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
 
     setOpen(false);
@@ -77,9 +76,9 @@ Services: ${form.services.join(", ")}`;
       {renderTrigger ? (
         renderTrigger(() => setOpen(true))
       ) : (
-        <button>
-
-        </button>
+<button>
+  
+</button>
       )}
 
       <AnimatePresence>

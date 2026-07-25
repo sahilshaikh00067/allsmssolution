@@ -100,6 +100,18 @@ export default function Whatsapp() {
                                     )}
                                 />
 
+                                                        <LeadPopup
+                                                            whatsappNumber="918108378154"
+                                                            renderTrigger={(open) => (
+                                                                <button
+                                                                    onClick={open}
+                                                                    className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
+                                                                >
+                                                                    Chatbot
+                                                                </button>
+                                                            )}
+                                                        />
+
                                 {/* MEETING */}
                                 {/* <button className="border border-black hover:bg-black text-black hover:text-white px-2 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300">
 

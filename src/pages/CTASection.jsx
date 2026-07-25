@@ -36,24 +36,27 @@ const CTASection = () => {
 
                         </Link>
 
-                        {/* PRICING */}
-                        {/* <Link
-                            to="/pricing"
-                            className="px-4 py-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
-                        >
-
-                            Pricing
-
-                        </Link> */}
-
-                        {/* GET STARTED */}
-<LeadPopup
+                        {/* GET STARTED — default number */}
+                        <LeadPopup
                             renderTrigger={(open) => (
                                 <button
                                     onClick={open}
                                     className="px-4 py-2 bg-[#111827] text-white text-[18px] font-semibold rounded-[6px] hover:bg-[#2a3b69] transition-all duration-300"
                                 >
                                     Get started
+                                </button>
+                            )}
+                        />
+
+                        {/* CHATBOT — custom number */}
+                        <LeadPopup
+                            whatsappNumber="918108378154"
+                            renderTrigger={(open) => (
+                                <button
+                                    onClick={open}
+                                    className="px-4 py-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
+                                >
+                                    Chatbot
                                 </button>
                             )}
                         />
