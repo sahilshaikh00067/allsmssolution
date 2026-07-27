@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LeadPopup from "../components/Leadpopup";
+import { openDirectWhatsApp } from "../utils/whatsapp";
 
 const CTASection = () => {
 
@@ -40,7 +41,7 @@ const CTASection = () => {
                         <LeadPopup
                             renderTrigger={(open) => (
                                 <button
-                                    onClick={open}
+                                      onClick={openDirectWhatsApp}
                                     className="px-4 py-2 bg-[#111827] text-white text-[18px] font-semibold rounded-[6px] hover:bg-[#2a3b69] transition-all duration-300"
                                 >
                                     Get started
@@ -53,7 +54,7 @@ const CTASection = () => {
                             whatsappNumber="918108378154"
                             renderTrigger={(open) => (
                                 <button
-                                    onClick={open}
+                                      onClick={openDirectWhatsApp}
                                     className="px-4 py-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
                                 >
                                     Chatbot

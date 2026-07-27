@@ -22,6 +22,7 @@ import mail19 from "../assets/Images/mail19.mp4";
 import maill from "../assets/Images/maill.jpg";
 import CTASection from "./CTASection";
 import LeadPopup from "../components/Leadpopup";
+import { openDirectWhatsApp } from "../utils/whatsapp";
 
 
 
@@ -32,6 +33,7 @@ import LeadPopup from "../components/Leadpopup";
 
 
 export default function Email() {
+    
 
     const [showMoreLeft, setShowMoreLeft] = useState(false);
     const [showMoreRight, setShowMoreRight] = useState(false);
@@ -97,7 +99,7 @@ export default function Email() {
                                                <LeadPopup
                                                    renderTrigger={(open) => (
                                                        <button
-                                                           onClick={open}
+                                                             onClick={openDirectWhatsApp}
 
                                  className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[18px] font-medium transition-all duration-300 border border-[#1a212b]">
 
@@ -108,10 +110,11 @@ export default function Email() {
                                                    />
 
                                                                            <LeadPopup
-                                                                               whatsappNumber="918108378154"
+                                                                                                           whatsappNumber="918108378154"
+
                                                                                renderTrigger={(open) => (
                                                                                    <button
-                                                                                       onClick={open}
+                                                                                         onClick={openDirectWhatsApp}
                                                                                        className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
                                                                                    >
                                                                                        Chatbot

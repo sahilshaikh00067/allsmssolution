@@ -5,7 +5,7 @@ import Tilt from "react-parallax-tilt";
 import { ShieldCheck, Zap, Globe2, ArrowRight } from "lucide-react";
 import home1 from "../assets/Images/home1.png";
 import LeadPopup from "../components/Leadpopup";
-
+import { openDirectWhatsApp } from "../utils/whatsapp";
 const logos = ["IVR Call", "Whatsapp Api Services", "RCS SMS", "Bulk SMS", "Voice Call", "Chatbot"];
 
 const fadeUp = {
@@ -114,7 +114,7 @@ const Hero = () => {
               <LeadPopup
                 renderTrigger={(open) => (
                   <button
-                    onClick={open}
+                      onClick={openDirectWhatsApp}
                     className="hero-shimmer group relative overflow-hidden rounded-xl bg-[#111827] px-8 py-4 text-white font-medium transition-all duration-300 hover:scale-105 shadow-[0_10px_30px_-8px_rgba(17,24,39,0.5)]"
                   >
                     <span className="relative z-10 flex items-center gap-2">
@@ -129,10 +129,11 @@ const Hero = () => {
               <LeadPopup
                 renderTrigger={(open) => (
                   <button
-                    onClick={open}
+                                              whatsappNumber="918108378154"
+
                     className="rounded-xl border border-[#d1d5db] bg-white/80 backdrop-blur-md px-8 py-4 font-medium text-[#111827] shadow-lg transition-all duration-300 hover:scale-105 hover:border-[#4959ab] hover:text-[#4959ab]"
                   >
-                    Live Demo
+                    Chatbot
                   </button>
                 )}
               />

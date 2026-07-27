@@ -42,17 +42,25 @@ export default function LeadPopup({ buttonText = "", renderTrigger, whatsappNumb
       return;
     }
 
-    const message = `New Inquiry:%0A
-Full Name: ${form.fullName}%0A
-Company: ${form.companyName}%0A
-Email: ${form.email}%0A
-Address: ${form.address}%0A
-Business Type: ${form.businessType}%0A
-Services: ${form.services.join(", ")}`;
+    const formWhatsappNumber = "919920067649";
 
-    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
+    const message = `New Inquiry:
+
+Full Name: ${form.fullName}
+Company: ${form.companyName}
+Email: ${form.email}
+Address: ${form.address}
+Business Type: ${form.businessType}
+Services: ${form.services.join(", ") || "Not selected"}`;
+
+    const whatsappURL = `https://wa.me/${formWhatsappNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappURL, "_blank");
 
     setOpen(false);
+
     setForm({
       fullName: "",
       companyName: "",
@@ -61,6 +69,22 @@ Services: ${form.services.join(", ")}`;
       businessType: "",
       services: [],
     });
+  };
+
+  const openDirectWhatsApp = () => {
+    const directWhatsappNumber = "918108378154";
+
+    const message = `👋Hello,
+
+* I visited your website and I'm interested in learning more about your services.
+* Kindly share the available solutions and pricing.
+
+Thank you.`;
+
+    window.open(
+      `https://wa.me/${directWhatsappNumber}?text=${encodeURIComponent(message)}`,
+      "_blank"
+    );
   };
 
   const fields = [
@@ -76,9 +100,9 @@ Services: ${form.services.join(", ")}`;
       {renderTrigger ? (
         renderTrigger(() => setOpen(true))
       ) : (
-<button>
-  
-</button>
+        <button>
+
+        </button>
       )}
 
       <AnimatePresence>
@@ -175,11 +199,10 @@ Services: ${form.services.join(", ")}`;
                             type="button"
                             key={service}
                             onClick={() => toggleService(service)}
-                            className={`px-3 py-1.5 rounded-lg text-[12px] font-medium border transition-all duration-300 ${
-                              active
-                                ? "bg-gradient-to-r from-[#efc84a] to-[#c99a15] border-[#efc84a] text-[#111827] shadow-[0_4px_16px_-4px_rgba(239,200,74,0.6)] scale-105"
-                                : "bg-white/[0.03] border-white/10 text-white/50 hover:border-[#efc84a]/40 hover:text-white/80"
-                            }`}
+                            className={`px-3 py-1.5 rounded-lg text-[12px] font-medium border transition-all duration-300 ${active
+                              ? "bg-gradient-to-r from-[#efc84a] to-[#c99a15] border-[#efc84a] text-[#111827] shadow-[0_4px_16px_-4px_rgba(239,200,74,0.6)] scale-105"
+                              : "bg-white/[0.03] border-white/10 text-white/50 hover:border-[#efc84a]/40 hover:text-white/80"
+                              }`}
                           >
                             {service}
                           </button>

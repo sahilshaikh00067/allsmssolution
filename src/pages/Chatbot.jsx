@@ -16,6 +16,7 @@ import chatbot9 from "../assets/Images/chatbot9.jpg";
 import chatbot10 from "../assets/Images/chatbot10.jpg";
 import CTASection from "./CTASection";
 import LeadPopup from "../components/Leadpopup";
+import { openDirectWhatsApp } from "../utils/whatsapp";
 
 
 
@@ -160,6 +161,8 @@ const features3 = [
 
 const Chatbot = () => {
 
+    
+
 
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -193,7 +196,7 @@ const Chatbot = () => {
                             <LeadPopup
                                 renderTrigger={(open) => (
                                     <button
-                                        onClick={open}
+                                          onClick={openDirectWhatsApp}
 
                                         className="bg-white hover:bg-[#9d8431] text-[#111827] border border-[#c99a15] px-6 py-2 rounded-[8px] text-[18px] font-normal transition-all duration-300">
                                         Get Started
@@ -202,10 +205,11 @@ const Chatbot = () => {
                             />
 
                         <LeadPopup
-                            whatsappNumber="918108378154"
+                                                        whatsappNumber="918108378154"
+
                             renderTrigger={(open) => (
                                 <button
-                                    onClick={open}
+                                      onClick={openDirectWhatsApp}
                                     className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
                                 >
                                     Chatbot

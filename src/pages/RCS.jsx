@@ -12,6 +12,7 @@ import rcs12 from "../assets/Images/rcs12.jpg";
 import rcs13 from "../assets/Images/rcs13.jpg";
 import rcsv from "../assets/Images/rcsv.mp4";
 import LeadPopup from "../components/Leadpopup";
+import { openDirectWhatsApp } from "../utils/whatsapp";
 
 
 const RCS = ({
@@ -23,6 +24,8 @@ const RCS = ({
     ctaLabel = "Get Started",
     ctaLink = "/signup",
 }) => {
+
+    
 
     return (
         <>
@@ -51,7 +54,7 @@ const RCS = ({
                                 <LeadPopup
                                     renderTrigger={(open) => (
                                         <button
-                                            onClick={open} 
+                                              onClick={openDirectWhatsApp} 
                             
                             className="bg-[#111827] hover:bg-[#9e892c] transition-colors text-white px-6 py-3 rounded-md text-sm font-medium">
                                 {ctaLabel}
@@ -60,10 +63,11 @@ const RCS = ({
                                     />
 
                                                             <LeadPopup
-                                                                whatsappNumber="918108378154"
+                                                                                            whatsappNumber="918108378154"
+
                                                                 renderTrigger={(open) => (
                                                                     <button
-                                                                        onClick={open}
+                                                                          onClick={openDirectWhatsApp}
                                                                         className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
                                                                     >
                                                                         Chatbot

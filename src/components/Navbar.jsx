@@ -28,6 +28,8 @@ import voice from "../assets/Images/voice.svg";
 import numbers from "../assets/Images/numbers.svg";
 
 import LeadPopup from "../components/Leadpopup";
+import { openDirectWhatsApp } from "../utils/whatsapp";
+
 
 const Navbar = () => {
 
@@ -341,7 +343,7 @@ const Navbar = () => {
                     <LeadPopup
                         renderTrigger={(open) => (
                             <button
-                                onClick={open}
+                                  onClick={openDirectWhatsApp}
                                 className="bg-[#111827] hover:bg-[#9e892c] text-white px-7 py-2.5 rounded-md text-[14px] font-normal transition-all duration-300"
                             >
                                 SIGN UP
@@ -396,7 +398,7 @@ const Navbar = () => {
                     <LeadPopup
                         renderTrigger={(open) => (
                             <button
-                                onClick={open}
+                                  onClick={openDirectWhatsApp}
                                 className="w-full bg-[#111827] text-white py-3 rounded-lg mt-2"
                             >
                                 SIGN UP

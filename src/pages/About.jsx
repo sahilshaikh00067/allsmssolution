@@ -13,6 +13,8 @@ import about10 from "../assets/Images/about10.png";
 import about11 from "../assets/Images/about11.png";
 import CTASection from "./CTASection";
 import LeadPopup from "../components/Leadpopup";
+import { openDirectWhatsApp } from "../utils/whatsapp";
+
 
 const stats = [
   { value: "2000+", label: "Registered Users" },
@@ -121,6 +123,7 @@ const MilestonePoint = ({ point }) => (
 );
 
 const About = () => {
+  
   const trackRef = useRef(null);
 
   // Pause the marquee on hover / touch, resume on leave
@@ -205,7 +208,7 @@ const About = () => {
                                 <LeadPopup
                                     renderTrigger={(open) => (
                                         <button
-                                            onClick={open} 
+                                              onClick={openDirectWhatsApp} 
                             
                             className="bg-[#111827] hover:bg-[#9e892c] transition-colors text-white px-6 py-3 rounded-md text-sm font-medium">
                             Get Started
@@ -214,10 +217,11 @@ const About = () => {
                                     />
 
                                                             <LeadPopup
-                                                                whatsappNumber="918108378154"
+                                                                                            whatsappNumber="918108378154"
+
                                                                 renderTrigger={(open) => (
                                                                     <button
-                                                                        onClick={open}
+                                                                          onClick={openDirectWhatsApp}
                                                                         className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
                                                                     >
                                                                         Chatbot

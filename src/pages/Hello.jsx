@@ -5,8 +5,11 @@ import hellov1 from "../assets/Images/hellov1.mp4";
 import HelloDown from "./HelloDown";
 import CTASection from "./CTASection";
 import LeadPopup from "../components/Leadpopup";
+import { openDirectWhatsApp } from "../utils/whatsapp";
+
 
 const Hello = () => {
+  
   return (
     <>
       <section className="w-full min-h-screen flex items-start pt-2 overflow-hidden">
@@ -49,7 +52,7 @@ const Hello = () => {
                   <div className="flex flex-wrap items-center gap-3 mt-8">
                     {/* GET STARTED */}
                     <button
-                      onClick={open}
+                        onClick={openDirectWhatsApp}
                       className="bg-[#efc84a] hover:bg-[#d9b02d] text-[#111827] px-2 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300 border border-[#c99a15]"
                     >
                       Get Started →
@@ -58,14 +61,14 @@ const Hello = () => {
 
 
                     {/* <button
-                      onClick={open}
+                        onClick={openDirectWhatsApp}
                       className="border border-[#c99a15] hover:bg-[#efc84a] text-[#9a6a00] hover:text-[#111827] px-2 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300"
                     >
                       Schedule a Meeting →
                     </button>
 
                     <button
-                      onClick={open}
+                        onClick={openDirectWhatsApp}
                       className="border border-[#c99a15] hover:bg-[#efc84a] text-[#9a6a00] hover:text-[#111827] px-2 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300"
                     >
                       Chatbot →
@@ -73,10 +76,11 @@ const Hello = () => {
 
                     
                                       <LeadPopup
-                                          whatsappNumber="918108378154"
+                                                                      whatsappNumber="918108378154"
+
                                           renderTrigger={(open) => (
                                               <button
-                                                  onClick={open}
+                                                    onClick={openDirectWhatsApp}
                                                   className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
                                               >
                                                   Chatbot

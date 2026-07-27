@@ -10,10 +10,12 @@ import sms7 from "../assets/Images/sms7.jpg"
 import FAQ from './FAQ'
 import CTASection from './CTASection'
 import LeadPopup from '../components/Leadpopup'
+import { openDirectWhatsApp } from "../utils/whatsapp";
 
 
 
 export default function Sms() {
+    
     return (
         <>
             <section className="w-full flex items-center overflow-hidden">
@@ -70,7 +72,7 @@ export default function Sms() {
                             <LeadPopup
                                 renderTrigger={(open) => (
                                     <button
-                                        onClick={open}
+                                          onClick={openDirectWhatsApp}
 
                                         className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300 border border-[#1a212b]">
 
@@ -81,10 +83,11 @@ export default function Sms() {
                             />
 
                                                     <LeadPopup
-                                                        whatsappNumber="918108378154"
+                                                                                    whatsappNumber="918108378154"
+
                                                         renderTrigger={(open) => (
                                                             <button
-                                                                onClick={open}
+                                                                  onClick={openDirectWhatsApp}
                                                                 className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
                                                             >
                                                                 Chatbot
