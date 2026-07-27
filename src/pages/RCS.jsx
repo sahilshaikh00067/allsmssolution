@@ -54,7 +54,7 @@ const RCS = ({
                                 <LeadPopup
                                     renderTrigger={(open) => (
                                         <button
-                                              onClick={openDirectWhatsApp} 
+                                              onClick={open} 
                             
                             className="bg-[#111827] hover:bg-[#9e892c] transition-colors text-white px-6 py-3 rounded-md text-sm font-medium">
                                 {ctaLabel}
@@ -63,8 +63,6 @@ const RCS = ({
                                     />
 
                                                             <LeadPopup
-                                                                                            whatsappNumber="918108378154"
-
                                                                 renderTrigger={(open) => (
                                                                     <button
                                                                           onClick={openDirectWhatsApp}

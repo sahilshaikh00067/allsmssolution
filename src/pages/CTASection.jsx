@@ -41,7 +41,7 @@ const CTASection = () => {
                         <LeadPopup
                             renderTrigger={(open) => (
                                 <button
-                                      onClick={openDirectWhatsApp}
+                                      onClick={open}
                                     className="px-4 py-2 bg-[#111827] text-white text-[18px] font-semibold rounded-[6px] hover:bg-[#2a3b69] transition-all duration-300"
                                 >
                                     Get started

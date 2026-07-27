@@ -74,7 +74,7 @@ export default function Campaign() {
                                 <LeadPopup
                                     renderTrigger={(open) => (
                                         <button
-                                              onClick={openDirectWhatsApp}
+                                              onClick={open}
                                             className="bg-[#000000] hover:bg-[#1b2738] text-[#fafafa] px-4 py-2 rounded-[6px] text-[18px] font-medium transition-all duration-300 border border-[#1a212b]"
                                         >
                                             Get Started For Free →

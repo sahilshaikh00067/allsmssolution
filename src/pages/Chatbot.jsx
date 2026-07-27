@@ -196,7 +196,7 @@ const Chatbot = () => {
                             <LeadPopup
                                 renderTrigger={(open) => (
                                     <button
-                                          onClick={openDirectWhatsApp}
+                                          onClick={open}
 
                                         className="bg-white hover:bg-[#9d8431] text-[#111827] border border-[#c99a15] px-6 py-2 rounded-[8px] text-[18px] font-normal transition-all duration-300">
                                         Get Started

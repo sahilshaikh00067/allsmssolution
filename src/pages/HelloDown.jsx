@@ -11,7 +11,7 @@ import helloseven from "../assets/Images/helloseven.jpg";
 import helloeight from "../assets/Images/helloeight.jpg";
 import hellonine from "../assets/Images/hellonine.jpg";
 import FAQ from "./FAQ";
-import { openDirectWhatsApp } from "../utils/whatsapp";
+// import { openDirectWhatsApp } from "../utils/whatsapp";
 
 
 const HelloDown = () => {
@@ -69,7 +69,7 @@ const HelloDown = () => {
               <LeadPopup
                 renderTrigger={(open) => (
                   <button
-                      onClick={openDirectWhatsApp}
+                      onClick={open}
                     className="inline-flex items-center gap-2 mt-3 text-[18px] font-medium text-[#1d4ed8] hover:text-[#9a6a00] transition-all duration-300"
                   >
                     Talk to Us
@@ -201,7 +201,7 @@ const HelloDown = () => {
               <LeadPopup
                 renderTrigger={(open) => (
                   <button
-                      onClick={openDirectWhatsApp}
+                      onClick={open}
                     className="inline-flex items-center gap-2 mt-4 text-[18px] font-medium text-[#1d4ed8] hover:text-[#9a6a00] transition-all duration-300"
                   >
                     Get In Action
@@ -327,7 +327,7 @@ const HelloDown = () => {
               <LeadPopup
                 renderTrigger={(open) => (
                   <button
-                      onClick={openDirectWhatsApp}
+                      onClick={open}
                     className="inline-flex items-center gap-2 mt-4 text-[18px] font-medium text-[#1d4ed8] hover:text-[#9a6a00] transition-all duration-300"
                   >
                     Book A Demo
@@ -585,7 +585,7 @@ const HelloDown = () => {
               <LeadPopup
                 renderTrigger={(open) => (
                   <button
-                      onClick={openDirectWhatsApp}
+                      onClick={open}
                     className="inline-flex items-center gap-2 mt-4 text-[18px] font-medium text-[#1d4ed8] hover:text-[#9a6a00] transition-all duration-300"
                   >
                     Get Started

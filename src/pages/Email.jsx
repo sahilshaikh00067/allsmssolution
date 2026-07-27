@@ -99,7 +99,7 @@ export default function Email() {
                                                <LeadPopup
                                                    renderTrigger={(open) => (
                                                        <button
-                                                             onClick={openDirectWhatsApp}
+                                                             onClick={open}
 
                                  className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[18px] font-medium transition-all duration-300 border border-[#1a212b]">
 

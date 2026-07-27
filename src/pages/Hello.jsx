@@ -52,7 +52,7 @@ const Hello = () => {
                   <div className="flex flex-wrap items-center gap-3 mt-8">
                     {/* GET STARTED */}
                     <button
-                        onClick={openDirectWhatsApp}
+                        onClick={open}
                       className="bg-[#efc84a] hover:bg-[#d9b02d] text-[#111827] px-2 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300 border border-[#c99a15]"
                     >
                       Get Started →
