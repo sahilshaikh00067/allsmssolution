@@ -518,7 +518,7 @@ Technical Support
 
                     <Link to="/contact">Contact</Link>
 
-                    <Link to="/api-docs">API Docs</Link>
+                    <Link to="/">API Docs</Link>
 
                     <Link to="/contact">Contact</Link>
 
