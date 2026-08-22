@@ -31,10 +31,140 @@ import LeadPopup from "../components/Leadpopup";
 import { openDirectWhatsApp } from "../utils/whatsapp";
 
 
+// ================= TECHNICAL SUPPORT MODAL =================
+const TechnicalSupportModal = ({ isOpen, onClose }) => {
+
+    const [formData, setFormData] = useState({
+        company: "",
+        number: "",
+        username: "",
+        problem: ""
+    });
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const message = `New Technical Support Request
+
+Company Name: ${formData.company}
+Number: ${formData.number}
+Username: ${formData.username}
+Problem: ${formData.problem}`;
+
+        const whatsappUrl = `https://wa.me/919820110745?text=${encodeURIComponent(message)}`;
+
+        window.open(whatsappUrl, "_blank");
+
+        setFormData({ company: "", number: "", username: "", problem: "" });
+        onClose();
+    };
+
+    return (
+        <AnimatePresence>
+            {isOpen && (
+                <>
+                    {/* OVERLAY */}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.25 }}
+                        className="fixed inset-0 bg-black/50 z-[60]"
+                        onClick={onClose}
+                    />
+
+                    {/* MODAL CARD */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                        animate={{ opacity: 1, scale: 1, y: 0 }}
+                        exit={{ opacity: 0, scale: 0.95, y: 20 }}
+                        transition={{ duration: 0.3, ease: "easeOut" }}
+                        className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[92%] max-w-[440px] bg-white rounded-2xl shadow-2xl z-[70] p-8"
+                    >
+
+                        <div className="flex items-center justify-between mb-6">
+
+                            <h2 className="text-[20px] font-semibold text-[#111827]">
+                                Technical Support
+                            </h2>
+
+                            <button
+                                onClick={onClose}
+                                className="text-gray-400 hover:text-[#111827] transition"
+                            >
+                                <FaTimes />
+                            </button>
+
+                        </div>
+
+                        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+
+                            <input
+                                type="text"
+                                name="company"
+                                required
+                                value={formData.company}
+                                onChange={handleChange}
+                                placeholder="Company Name"
+                                className="w-full px-4 py-3 rounded-lg border border-gray-200 text-[14px] text-[#111827] focus:outline-none focus:border-[#9e892c] transition"
+                            />
+
+                            <input
+                                type="tel"
+                                name="number"
+                                required
+                                value={formData.number}
+                                onChange={handleChange}
+                                placeholder="Number"
+                                className="w-full px-4 py-3 rounded-lg border border-gray-200 text-[14px] text-[#111827] focus:outline-none focus:border-[#9e892c] transition"
+                            />
+
+                            <input
+                                type="text"
+                                name="username"
+                                required
+                                value={formData.username}
+                                onChange={handleChange}
+                                placeholder="Username"
+                                className="w-full px-4 py-3 rounded-lg border border-gray-200 text-[14px] text-[#111827] focus:outline-none focus:border-[#9e892c] transition"
+                            />
+
+                            <textarea
+                                name="problem"
+                                required
+                                rows={4}
+                                value={formData.problem}
+                                onChange={handleChange}
+                                placeholder="How can we help you?"
+                                className="w-full px-4 py-3 rounded-lg border border-gray-200 text-[14px] text-[#111827] focus:outline-none focus:border-[#9e892c] transition resize-none"
+                            />
+
+                            <button
+                                type="submit"
+                                className="w-full bg-[#111827] hover:bg-[#9e892c] text-white py-3 rounded-lg text-[14px] font-medium transition-all duration-300 mt-2"
+                            >
+                                Submit
+                            </button>
+
+                        </form>
+
+                    </motion.div>
+                </>
+            )}
+        </AnimatePresence>
+    );
+};
+
+
 const Navbar = () => {
 
     const [mobileMenu, setMobileMenu] = useState(false);
     const [productsOpen, setProductsOpen] = useState(false);
+    const [supportOpen, setSupportOpen] = useState(false);
 
     const countries = [
         { name: "Global", flag: "https://flagcdn.com/w20/un.png" },
@@ -135,7 +265,7 @@ const Navbar = () => {
 
                     {/* LOGIN */}
                     <Link
-                        to="/contact"
+                        to="https://iowa.allsmssolution.in/signin"
                         className="flex items-center gap-2 hover:text-[#9e892c] transition"
                     >
 
@@ -329,16 +459,15 @@ const Navbar = () => {
                 {/* RIGHT MENU */}
                 <div className="hidden lg:flex items-center gap-7">
 
-                    <Link
-                        to="/contact"
+                    <button
+                        onClick={() => setSupportOpen(true)}
                         className="relative group text-[16px] font-normal text-[#111827] hover:text-[#9e892c] transition"
                     >
 
-                        API Docs
-
+Technical Support
                         <span className="absolute left-0 -bottom-2 w-0 h-[2px] bg-[#9e892c] transition-all duration-300 group-hover:w-full"></span>
 
-                    </Link>
+                    </button>
 
                     <LeadPopup
                         renderTrigger={(open) => (
@@ -409,6 +538,12 @@ const Navbar = () => {
                 </div>
 
             </div>
+
+            {/* TECHNICAL SUPPORT MODAL */}
+            <TechnicalSupportModal
+                isOpen={supportOpen}
+                onClose={() => setSupportOpen(false)}
+            />
 
         </header>
     );
