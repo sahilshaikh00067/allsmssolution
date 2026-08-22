@@ -8,7 +8,12 @@ import {
     FaChevronDown,
     FaBars,
     FaTimes,
-    FaBell
+    FaBell,
+    FaHeadset,
+    FaBuilding,
+    FaUser,
+    FaCommentDots,
+    FaPaperPlane
 } from "react-icons/fa";
 
 import finallogo from "../assets/Images/finallogo.jpeg";
@@ -18,7 +23,7 @@ import helloicon from "../assets/Images/helloicon.svg";
 import campaignicon from "../assets/Images/campaignicon.svg";
 import segmentoicon from "../assets/Images/segmentoicon.svg";
 import otpicon from "../assets/Images/otpicon.svg";
-
+FaHeadset, FaBuilding, FaUser, FaCommentDots, FaPaperPlane
 // Channels
 import sms from "../assets/Images/sms.svg";
 import rcsicon from "../assets/Images/rcsicon.svg";
@@ -63,6 +68,12 @@ Problem: ${formData.problem}`;
         onClose();
     };
 
+    const fields = [
+        { name: "company", type: "text", placeholder: "Company Name", icon: <FaBuilding /> },
+        { name: "number", type: "tel", placeholder: "Number", icon: <FaPhoneAlt /> },
+        { name: "username", type: "text", placeholder: "Username", icon: <FaUser /> },
+    ];
+
     return (
         <AnimatePresence>
             {isOpen && (
@@ -73,7 +84,7 @@ Problem: ${formData.problem}`;
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.25 }}
-                        className="fixed inset-0 bg-black/50 z-[60]"
+                        className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60]"
                         onClick={onClose}
                     />
 
@@ -83,70 +94,76 @@ Problem: ${formData.problem}`;
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 20 }}
                         transition={{ duration: 0.3, ease: "easeOut" }}
-                        className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[92%] max-w-[440px] bg-white rounded-2xl shadow-2xl z-[70] p-8"
+                        className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[92%] max-w-[480px] bg-white rounded-3xl shadow-2xl z-[70] p-8 md:p-10"
                     >
 
-                        <div className="flex items-center justify-between mb-6">
+                        <button
+                            onClick={onClose}
+                            className="absolute top-6 right-6 w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 text-gray-400 hover:text-[#111827] hover:border-[#9e892c] transition"
+                        >
+                            <FaTimes />
+                        </button>
 
-                            <h2 className="text-[20px] font-semibold text-[#111827]">
-                                Technical Support
-                            </h2>
+                        {/* HEADER */}
+                        <div className="flex items-center gap-4">
+                            <div className="w-16 h-16 rounded-full bg-[#fdf3e0] flex items-center justify-center flex-shrink-0">
+                                <FaHeadset className="text-[26px] text-[#111827]" />
+                            </div>
 
-                            <button
-                                onClick={onClose}
-                                className="text-gray-400 hover:text-[#111827] transition"
-                            >
-                                <FaTimes />
-                            </button>
-
+                            <div>
+                                <h2 className="text-[24px] font-bold text-[#111827] leading-tight">
+                                    Technical Support
+                                </h2>
+                                <span className="block w-12 h-[3px] bg-[#9e892c] rounded-full mt-1.5"></span>
+                            </div>
                         </div>
+
+                        <p className="text-[14px] text-gray-500 mt-4 mb-6">
+                            We're here to help! Please fill the form below.
+                        </p>
 
                         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
 
-                            <input
-                                type="text"
-                                name="company"
-                                required
-                                value={formData.company}
-                                onChange={handleChange}
-                                placeholder="Company Name"
-                                className="w-full px-4 py-3 rounded-lg border border-gray-200 text-[14px] text-[#111827] focus:outline-none focus:border-[#9e892c] transition"
-                            />
+                            {fields.map((field) => (
+                                <div
+                                    key={field.name}
+                                    className="flex items-center gap-3 border border-gray-200 rounded-xl px-3 focus-within:border-[#9e892c] transition"
+                                >
+                                    <span className="w-9 h-9 flex items-center justify-center rounded-lg bg-[#fdf3e0] text-[#9e892c] text-[15px]">
+                                        {field.icon}
+                                    </span>
+                                    <input
+                                        type={field.type}
+                                        name={field.name}
+                                        required
+                                        value={formData[field.name]}
+                                        onChange={handleChange}
+                                        placeholder={field.placeholder}
+                                        className="w-full py-3 text-[14px] text-[#111827] bg-transparent focus:outline-none placeholder:text-gray-400"
+                                    />
+                                </div>
+                            ))}
 
-                            <input
-                                type="tel"
-                                name="number"
-                                required
-                                value={formData.number}
-                                onChange={handleChange}
-                                placeholder="Number"
-                                className="w-full px-4 py-3 rounded-lg border border-gray-200 text-[14px] text-[#111827] focus:outline-none focus:border-[#9e892c] transition"
-                            />
-
-                            <input
-                                type="text"
-                                name="username"
-                                required
-                                value={formData.username}
-                                onChange={handleChange}
-                                placeholder="Username"
-                                className="w-full px-4 py-3 rounded-lg border border-gray-200 text-[14px] text-[#111827] focus:outline-none focus:border-[#9e892c] transition"
-                            />
-
-                            <textarea
-                                name="problem"
-                                required
-                                rows={4}
-                                value={formData.problem}
-                                onChange={handleChange}
-                                placeholder="How can we help you?"
-                                className="w-full px-4 py-3 rounded-lg border border-gray-200 text-[14px] text-[#111827] focus:outline-none focus:border-[#9e892c] transition resize-none"
-                            />
+                            <div className="flex items-start gap-3 border border-gray-200 rounded-xl px-3 py-3 focus-within:border-[#9e892c] transition">
+                                <span className="w-9 h-9 flex items-center justify-center rounded-lg bg-[#fdf3e0] text-[#9e892c] text-[15px] mt-0.5">
+                                    <FaCommentDots />
+                                </span>
+                                <textarea
+                                    name="problem"
+                                    required
+                                    rows={4}
+                                    value={formData.problem}
+                                    onChange={handleChange}
+                                    placeholder="How can we help you?"
+                                    className="w-full text-[14px] text-[#111827] bg-transparent focus:outline-none resize-none placeholder:text-gray-400"
+                                />
+                            </div>
 
                             <button
                                 type="submit"
-                                className="w-full bg-[#111827] hover:bg-[#9e892c] text-white py-3 rounded-lg text-[14px] font-medium transition-all duration-300 mt-2"
+                                className="w-full flex items-center justify-center gap-2 bg-[#111827] hover:bg-[#9e892c] text-white py-3.5 rounded-xl text-[15px] font-semibold transition-all duration-300 mt-2 shadow-lg shadow-[#111827]/20"
                             >
+                                <FaPaperPlane className="text-[14px]" />
                                 Submit
                             </button>
 
