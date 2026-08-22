@@ -518,8 +518,6 @@ Technical Support
 
                     <Link to="/contact">Contact</Link>
 
-                    <Link to="/">API Docs</Link>
-
                     <Link to="/contact">Contact</Link>
 
                     <Link to="/login">Login</Link>
