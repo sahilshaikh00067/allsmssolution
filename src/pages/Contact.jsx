@@ -185,10 +185,22 @@ export default function GetInTouch() {
                   <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="#5b7fff" strokeWidth={2}>{PHONE_ICON_PATH}</svg>
                   <span className="gt-phone-num">{num}</span>
                   {whatsapp && (
-                    <a href={`https://wa.me/91${num.replace(/\D/g, "").slice(-10)}`} target="_blank" rel="noreferrer"
-                      className="gt-round-btn" style={{ background: "rgba(37,211,102,0.12)" }}>
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d166">{WA_ICON_PATH}</svg>
-                    </a>
+<a
+  href={`https://wa.me/91${num.replace(/\D/g, "").slice(-10)}?text=${encodeURIComponent(
+    `Hello,
+I am interested in your Service and would like to discuss my requirements. Please connect with me.
+
+Source: Website Lead 🌐`
+  )}`}
+  target="_blank"
+  rel="noreferrer"
+  className="gt-round-btn"
+  style={{ background: "rgba(37,211,102,0.12)" }}
+>
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d166">
+    {WA_ICON_PATH}
+  </svg>
+</a>
                   )}
                   <a href={`tel:${num.replace(/\s/g, "")}`} className="gt-round-btn" style={{ background: "rgba(99,135,255,0.1)" }}>
                     <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="#5b7fff" strokeWidth={2}>{PHONE_ICON_PATH}</svg>
@@ -286,8 +298,21 @@ export default function GetInTouch() {
                 <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="#a855f7" strokeWidth={2}>{PHONE_ICON_PATH}</svg>
                 <span className="gt-phone-num">+91 7977505642</span>
 
-                <a href="https://wa.me/917977505642" target="_blank" rel="noreferrer" className="gt-round-btn" style={{ background: "rgba(37,211,102,0.12)" }}>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d166">{WA_ICON_PATH}</svg>
+                <a
+                  href={`https://wa.me/917977505642?text=${encodeURIComponent(
+                    `Hello,
+I am interested in your Service and would like to discuss my requirements. Please connect with me.
+
+Source: Website Lead 🌐`
+                  )}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="gt-round-btn"
+                  style={{ background: "rgba(37,211,102,0.12)" }}
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d166">
+                    {WA_ICON_PATH}
+                  </svg>
                 </a>
 
                 <a href="tel:+917977505642" className="gt-round-btn" style={{ background: "rgba(168,99,255,0.1)" }}>
