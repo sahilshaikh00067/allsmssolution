@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const whatsappNumber = "919920067649";
 
@@ -19,6 +20,7 @@ function sendToWhatsApp(formData) {
 ${formData.message}
 
 ━━━━━━━━━━━━━━━━━━━━━━
+☑️ *Accepted Privacy Policy & Terms and Conditions:* Yes
 ⏰ *Submitted On:*
 ${new Date().toLocaleString("en-IN")}
 
@@ -103,6 +105,18 @@ const RESPONSIVE_CSS = `
 .gt-input:focus { background: rgba(255,255,255,0.08); border-color: rgba(99,135,255,0.7); box-shadow: 0 0 0 3px rgba(99,135,255,0.12); }
 .gt-textarea { resize: none; }
 
+/* ── Consent checkbox ── */
+.gt-consent { display: flex; align-items: flex-start; gap: 10px; margin-top: 14px; cursor: pointer; position: relative; z-index: 1; }
+.gt-consent input { position: absolute; opacity: 0; width: 0; height: 0; }
+.gt-checkbox { flex-shrink: 0; width: 18px; height: 18px; margin-top: 1px; border-radius: 5px; border: 1.5px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.04); display: flex; align-items: center; justify-content: center; transition: all 0.2s ease; }
+.gt-checkbox svg { opacity: 0; transition: opacity 0.15s ease; }
+.gt-consent input:checked + .gt-checkbox { background: #25d166; border-color: #25d166; }
+.gt-consent input:checked + .gt-checkbox svg { opacity: 1; }
+.gt-consent input:focus-visible + .gt-checkbox { box-shadow: 0 0 0 3px rgba(99,135,255,0.45); }
+.gt-consent-text { font-size: 12.5px; color: rgba(255,255,255,0.55); line-height: 1.55; }
+.gt-consent-text a { color: #8fa8ff; text-decoration: underline; text-underline-offset: 2px; }
+.gt-consent-text a:hover { color: #b6c6ff; }
+
 .gt-submit { margin-top: 16px; width: 100%; border: none; border-radius: 14px; padding: 15px 0; font-size: 14px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s ease; letter-spacing: 0.01em; font-family: inherit; position: relative; z-index: 1; }
 .gt-submit.active { background: linear-gradient(135deg, #25d166 0%, #1aab52 100%); color: #fff; cursor: pointer; box-shadow: 0 8px 24px rgba(37,209,102,0.28); }
 .gt-submit.active:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(37,209,102,0.36); }
@@ -123,21 +137,23 @@ const RESPONSIVE_CSS = `
 
 export default function GetInTouch() {
   const [form, setForm] = useState({ name: "", phone: "", email: "", company: "", message: "" });
+  const [agreed, setAgreed] = useState(false);
   const [sent, setSent] = useState(false);
 
   const handleChange = (e) => setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
 
+  const canSubmit = form.name && form.phone && form.email && agreed;
+
   const handleSubmit = () => {
-    if (!form.name || !form.phone || !form.email) return;
+    if (!canSubmit) return;
     sendToWhatsApp(form);
     setSent(true);
     setTimeout(() => {
       setSent(false);
       setForm({ name: "", phone: "", email: "", company: "", message: "" });
+      setAgreed(false);
     }, 3500);
   };
-
-  const canSubmit = form.name && form.phone && form.email;
 
   return (
     <section className="gt-section">
@@ -185,22 +201,22 @@ export default function GetInTouch() {
                   <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="#5b7fff" strokeWidth={2}>{PHONE_ICON_PATH}</svg>
                   <span className="gt-phone-num">{num}</span>
                   {whatsapp && (
-<a
-  href={`https://wa.me/91${num.replace(/\D/g, "").slice(-10)}?text=${encodeURIComponent(
-    `Hello,
+                    <a
+                      href={`https://wa.me/91${num.replace(/\D/g, "").slice(-10)}?text=${encodeURIComponent(
+                        `Hello,
 I am interested in your Service and would like to discuss my requirements. Please connect with me.
 
 Source: Website Lead 🌐`
-  )}`}
-  target="_blank"
-  rel="noreferrer"
-  className="gt-round-btn"
-  style={{ background: "rgba(37,211,102,0.12)" }}
->
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d166">
-    {WA_ICON_PATH}
-  </svg>
-</a>
+                      )}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="gt-round-btn"
+                      style={{ background: "rgba(37,211,102,0.12)" }}
+                    >
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d166">
+                        {WA_ICON_PATH}
+                      </svg>
+                    </a>
                   )}
                   <a href={`tel:${num.replace(/\s/g, "")}`} className="gt-round-btn" style={{ background: "rgba(99,135,255,0.1)" }}>
                     <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="#5b7fff" strokeWidth={2}>{PHONE_ICON_PATH}</svg>
@@ -233,39 +249,63 @@ Source: Website Lead 🌐`
                 <p className="gt-success-sub">WhatsApp opened with your message pre-filled.</p>
               </div>
             ) : (
-              <div className="gt-fields">
-                {[
-                  { name: "name", placeholder: "Full Name", type: "text" },
-                  { name: "phone", placeholder: "Phone Number", type: "tel" },
-                  { name: "email", placeholder: "Email Address", type: "email" },
-                  { name: "company", placeholder: "Company Name", type: "text" },
-                ].map(({ name, placeholder, type }) => (
-                  <input
-                    key={name}
-                    type={type}
-                    name={name}
-                    placeholder={placeholder}
-                    value={form[name]}
+              <>
+                <div className="gt-fields">
+                  {[
+                    { name: "name", placeholder: "Full Name", type: "text" },
+                    { name: "phone", placeholder: "Phone Number", type: "tel" },
+                    { name: "email", placeholder: "Email Address", type: "email" },
+                    { name: "company", placeholder: "Company Name", type: "text" },
+                  ].map(({ name, placeholder, type }) => (
+                    <input
+                      key={name}
+                      type={type}
+                      name={name}
+                      placeholder={placeholder}
+                      value={form[name]}
+                      onChange={handleChange}
+                      className="gt-input"
+                    />
+                  ))}
+                  <textarea
+                    name="message"
+                    placeholder="Your Message (optional)"
+                    rows={3}
+                    value={form.message}
                     onChange={handleChange}
-                    className="gt-input"
+                    className="gt-input gt-textarea"
                   />
-                ))}
-                <textarea
-                  name="message"
-                  placeholder="Your Message (optional)"
-                  rows={3}
-                  value={form.message}
-                  onChange={handleChange}
-                  className="gt-input gt-textarea"
-                />
-              </div>
-            )}
+                </div>
 
-            {!sent && (
-              <button onClick={handleSubmit} className={`gt-submit ${canSubmit ? "active" : "disabled"}`}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" opacity={canSubmit ? 1 : 0.4}>{WA_ICON_PATH}</svg>
-                Send Now
-              </button>
+                {/* Consent checkbox */}
+                <label className="gt-consent">
+                  <input
+                    type="checkbox"
+                    checked={agreed}
+                    onChange={(e) => setAgreed(e.target.checked)}
+                  />
+                  <span className="gt-checkbox">
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
+                      <path d="M3 7.5l2.5 2.5L11 4.5" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  <span className="gt-consent-text">
+                    I agree to the{" "}
+                    <Link to="/privacy-policy" target="_blank" rel="noreferrer">Privacy Policy</Link>
+                    {" "}and{" "}
+                    <Link to="/terms" target="_blank" rel="noreferrer">Terms &amp; Conditions</Link>.
+                  </span>
+                </label>
+
+                <button
+                  onClick={handleSubmit}
+                  disabled={!canSubmit}
+                  className={`gt-submit ${canSubmit ? "active" : "disabled"}`}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" opacity={canSubmit ? 1 : 0.4}>{WA_ICON_PATH}</svg>
+                  Send Now
+                </button>
+              </>
             )}
 
             <p className="gt-form-note">Opens WhatsApp with your message pre-filled</p>
