@@ -188,9 +188,9 @@ export default function GetInTouch() {
             </ul>
 
             <div style={{ marginTop: "auto", display: "flex", flexDirection: "column", gap: "12px" }}>
-              <a href="mailto:info@allsmssolution.com" className="gt-mail-link" style={{ color: "#5b7fff" }}>
+              <a href="mailto:hasan@allsmssolution.in" className="gt-mail-link" style={{ color: "#5b7fff" }}>
                 <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>{MAIL_ICON_PATH}</svg>
-                info@allsmssolution.com
+                hasan@allsmssolution.in
               </a>
 
               {[
