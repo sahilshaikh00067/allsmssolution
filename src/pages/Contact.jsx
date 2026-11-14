@@ -188,9 +188,9 @@ export default function GetInTouch() {
             </ul>
 
             <div style={{ marginTop: "auto", display: "flex", flexDirection: "column", gap: "12px" }}>
-              <a href="mailto:hasan@allsmssolution.in" className="gt-mail-link" style={{ color: "#5b7fff" }}>
+              <a href="mailto:sales@allsmssolution.in" className="gt-mail-link" style={{ color: "#5b7fff" }}>
                 <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>{MAIL_ICON_PATH}</svg>
-                hasan@allsmssolution.in
+                sales@allsmssolution.in
               </a>
 
               {[
@@ -329,9 +329,9 @@ Source: Website Lead 🌐`
             </ul>
 
             <div style={{ marginTop: "auto", display: "flex", flexDirection: "column", gap: "12px" }}>
-              <a href="mailto:support@allsmssolution.com" className="gt-mail-link" style={{ color: "#a855f7" }}>
+              <a href="mailto:support@allsmssolution.in" className="gt-mail-link" style={{ color: "#a855f7" }}>
                 <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>{MAIL_ICON_PATH}</svg>
-                support@allsmssolution.com
+                support@allsmssolution.in
               </a>
 
               <div className="gt-phone-row">
