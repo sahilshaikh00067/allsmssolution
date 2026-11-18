@@ -7,12 +7,11 @@ import Products from "./Products";
 const Home = () => {
   return (
     <>
-    <Hero />
-    <Products />
-    {/* <MoreServices/> */}
-    <FAQ />
-    <CTASection />
-
+      <Hero />
+      <Products />
+      {/* <MoreServices /> */}
+      <FAQ />
+      <CTASection />
     </>
   );
 };
