@@ -7,7 +7,7 @@ const SEO = ({
   path = "/",
   noIndex = false,
 }) => {
-  const baseUrl = "https://allsmssolution.com";
+const baseUrl = "https://www.allsmssolution.com";
   const canonicalUrl = `${baseUrl}${path}`;
 
   return (
