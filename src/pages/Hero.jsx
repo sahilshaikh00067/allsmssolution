@@ -187,7 +187,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-sky-50 rounded-[40px] blur-2xl scale-110" />
               <img
                 src={home1}
-                alt="Bulk SMS, WhatsApp API & Business Communication Platform"
+                alt="Cloud Communication Platform"
                 className="relative w-full max-w-[850px] object-contain"
               />
             </Tilt>

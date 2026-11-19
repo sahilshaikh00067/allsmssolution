@@ -5,18 +5,18 @@ import whatsapp2 from "../assets/Images/whatsapp2.mp4";
 import whatsapp3 from "../assets/Images/whatsapp3.mp4";
 import whatsapp4 from "../assets/Images/whatsapp4.mp4";
 import whatsapp5 from "../assets/Images/whatsapp5.mp4";
-import whatsapp6 from "../assets/Images/whatsapp6.jpg";
-import whatsapp7 from "../assets/Images/whatsapp7.jpeg";
-import whatsapp8 from "../assets/Images/whatsapp8.jpeg";
-import whatsapp9 from "../assets/Images/whatsapp9.jpeg";
-import whatsapp10 from "../assets/Images/whatsapp10.jpg";
+import whatsapp6 from "../assets/Images/whatsapp6.png";
+import whatsapp7 from "../assets/Images/whatsapp7.png";
+import whatsapp8 from "../assets/Images/whatsapp8.png";
+import whatsapp9 from "../assets/Images/whatsapp9.png";
+import whatsapp10 from "../assets/Images/whatsapp10.png";
 import whatsapp11 from "../assets/Images/whatsapp11.jpg";
-import whatsapp12 from "../assets/Images/whatsapp12.jpeg";
+import whatsapp12 from "../assets/Images/whatsapp12.png";
 import whatsapp13 from "../assets/Images/whatsapp13.jpg";
 import whatsapp14 from "../assets/Images/whatsapp14.jpg";
-import whatsapp15 from "../assets/Images/whatsapp14.jpeg";
-import whatsapp16 from "../assets/Images/whatsapp16.jpg";
-import whatsapp17 from "../assets/Images/whatsapp17.jpg";
+import whatsapp15 from "../assets/Images/whatsapp15.png";
+import whatsapp16 from "../assets/Images/whatsapp16.png";
+import whatsapp17 from "../assets/Images/whatsapp17.png";
 import whatsapp18 from "../assets/Images/whatsapp18.jpg";
 import whatsapp19 from "../assets/Images/whatsapp19.jpg";
 import whatsapp20 from "../assets/Images/whatsapp20.jpg";
@@ -901,180 +901,7 @@ export default function Whatsapp() {
             </section>
 
 
-            <section className="w-full py-2 bg-gray-50">
-
-                <div className="w-full px-1">
-
-                    {/* SINGLE CARD */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center border border-gray-300 rounded-[2px] bg-white overflow-hidden">
-
-                        {/* LEFT CONTENT */}
-                        <div className="p-15">
-
-                            <h2 className="text-[20px] lg:text-[22px] font-semibold text-[#111827] leading-tight">
-
-                                Click Counts
-
-                            </h2>
-
-                            <p className="text-[16px] leading-[25px] text-[#2c3138] mt-5">
-
-                                Click counts indicate how many businesses or customers use
-                                a feature - high click counts show its popularity and
-                                effectiveness for customer engagement.
-
-                                You can view all click counts for a button either in the
-                                analytics section or through your webhook.
-
-                            </p>
-
-                        </div>
-
-                        {/* RIGHT IMAGE */}
-                        <div className="w-full flex items-center justify-center p-6">
-
-                            <img
-                                src={whatsapp11}
-                                alt="Click Counts"
-                                className="w-full max-w-[500px] h-auto object-contain"
-                            />
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <section className="w-full py-13 bg-gray-50">
-
-                <div className="w-full px-1">
-
-                    {/* GRID */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-
-                        {/* CARD 1 */}
-                        <div className="w-full border border-gray-300 rounded-[8px] bg-white overflow-hidden">
-
-                            {/* CONTENT */}
-                            <div className="p-15">
-
-                                <h3 className="text-[28px] font-semibold text-[#111827]">
-                                    Support Base64
-                                </h3>
-
-                                <p className="text-[15px] leading-[28px] text-[#2c3138] mt-3">
-                                    Send the body in JSON and leave the rest to us.
-
-                                    No need to make a URL or upload your file as you can
-                                    directly send JSON body and it will be converted
-                                    automatically into Base64 format and sent via WhatsApp.
-                                </p>
-
-                            </div>
-
-                            {/* IMAGE */}
-                            <div className="mt-8 w-full">
-
-                                <img
-                                    src={whatsapp12}
-                                    alt="Support Base64"
-                                    className="w-full h-[420px] object-contain"
-                                />
-
-                            </div>
-
-                        </div>
-
-                        {/* CARD 2 */}
-                        <div className="w-full border border-gray-300 rounded-[8px] bg-white overflow-hidden">
-
-                            {/* CONTENT */}
-                            <div className="p-15">
-
-                                <h3 className="text-[28px] font-semibold text-[#111827]">
-                                    2-way Communication
-                                </h3>
-
-                                <p className="text-[15px] leading-[28px] text-[#282d33] mt-3">
-                                    Say hello to go on HELLO.
-
-                                    Give your customer the right platform to continue the
-                                    conversation. Once they reply, they are directly taken
-                                    to HELLO to start a 2-way communication with your
-                                    business.
-                                </p>
-
-                            </div>
-
-                            {/* IMAGE */}
-                            <div className="mt-8 w-full">
-
-                                <img
-                                    src={whatsapp13}
-                                    alt="2-way Communication"
-                                    className="w-full h-[420px] object-contain"
-                                />
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <section className="w-full py-2 bg-gray-50">
-
-                <div className="w-full px-1">
-
-                    {/* SINGLE CARD */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center border border-gray-300 rounded-[2px] bg-white overflow-hidden">
-
-                        {/* LEFT CONTENT */}
-                        <div className="p-15">
-
-                            <h2 className="text-[20px] lg:text-[22px] font-semibold text-[#111827] leading-tight">
-
-                                Manage Template Inside Panel
-
-                            </h2>
-
-                            <p className="text-[16px] leading-[25px] text-[#2c3138] mt-5">
-
-                                Create and manage your template right here.
-
-                                No need to switch platforms to create your template.
-                                You can create the templates, manage it and check
-                                the status of it right here without going on Facebook.
-
-                            </p>
-
-                        </div>
-
-                        {/* RIGHT IMAGE */}
-                        <div className="w-full flex items-center justify-center p-6">
-
-                            <img
-                                src={whatsapp15}
-                                alt="Manage Template Inside Panel"
-                                className="w-full max-w-[600px] h-auto object-contain"
-                            />
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-            <section className="w-full py-3 bg-gray-50">
+                        <section className="w-full py-3 bg-gray-50">
 
                 <div className="w-full px-1">
 
@@ -1217,6 +1044,180 @@ export default function Whatsapp() {
                                 src={whatsapp14}
                                 alt="WhatsApp Payments"
                                 className="w-full max-w-[600px] h-auto object-contain"
+                            />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <section className="w-full py-13 bg-gray-50">
+
+                <div className="w-full px-1">
+
+                    {/* GRID */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+                        {/* CARD 1 */}
+                        <div className="w-full border border-gray-300 rounded-[8px] bg-white overflow-hidden">
+
+                            {/* CONTENT */}
+                            <div className="p-15">
+
+                                <h3 className="text-[28px] font-semibold text-[#111827]">
+                                    Support Base64
+                                </h3>
+
+                                <p className="text-[15px] leading-[28px] text-[#2c3138] mt-3">
+                                    Send the body in JSON and leave the rest to us.
+
+                                    No need to make a URL or upload your file as you can
+                                    directly send JSON body and it will be converted
+                                    automatically into Base64 format and sent via WhatsApp.
+                                </p>
+
+                            </div>
+
+                            {/* IMAGE */}
+                            <div className="mt-8 w-full">
+
+                                <img
+                                    src={whatsapp12}
+                                    alt="Support Base64"
+                                    className="w-full h-[420px] object-contain"
+                                />
+
+                            </div>
+
+                        </div>
+
+                        {/* CARD 2 */}
+                        <div className="w-full border border-gray-300 rounded-[8px] bg-white overflow-hidden">
+
+                            {/* CONTENT */}
+                            <div className="p-15">
+
+                                <h3 className="text-[28px] font-semibold text-[#111827]">
+                                    2-way Communication
+                                </h3>
+
+                                <p className="text-[15px] leading-[28px] text-[#282d33] mt-3">
+                                    Say hello to go on HELLO.
+
+                                    Give your customer the right platform to continue the
+                                    conversation. Once they reply, they are directly taken
+                                    to HELLO to start a 2-way communication with your
+                                    business.
+                                </p>
+
+                            </div>
+
+                            {/* IMAGE */}
+                            <div className="mt-8 w-full">
+
+                                <img
+                                    src={whatsapp13}
+                                    alt="2-way Communication"
+                                    className="w-full h-[420px] object-contain"
+                                />
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section className="w-full py-2 bg-gray-50">
+
+                <div className="w-full px-1">
+
+                    {/* SINGLE CARD */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center border border-gray-300 rounded-[2px] bg-white overflow-hidden">
+
+                        {/* LEFT CONTENT */}
+                        <div className="p-15">
+
+                            <h2 className="text-[20px] lg:text-[22px] font-semibold text-[#111827] leading-tight">
+
+                                Manage Template Inside Panel
+
+                            </h2>
+
+                            <p className="text-[16px] leading-[25px] text-[#2c3138] mt-5">
+
+                                Create and manage your template right here.
+
+                                No need to switch platforms to create your template.
+                                You can create the templates, manage it and check
+                                the status of it right here without going on Facebook.
+
+                            </p>
+
+                        </div>
+
+                        {/* RIGHT IMAGE */}
+                        <div className="w-full flex items-center justify-center p-6">
+
+                            <img
+                                src={whatsapp15}
+                                alt="Manage Template Inside Panel"
+                                className="w-full max-w-[600px] h-auto object-contain"
+                            />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section className="w-full py-2 bg-gray-50">
+
+                <div className="w-full px-1">
+
+                    {/* SINGLE CARD */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center border border-gray-300 rounded-[2px] bg-white overflow-hidden">
+
+                        {/* LEFT CONTENT */}
+                        <div className="p-15">
+
+                            <h2 className="text-[20px] lg:text-[22px] font-semibold text-[#111827] leading-tight">
+
+                                Click Counts
+
+                            </h2>
+
+                            <p className="text-[16px] leading-[25px] text-[#2c3138] mt-5">
+
+                                Click counts indicate how many businesses or customers use
+                                a feature - high click counts show its popularity and
+                                effectiveness for customer engagement.
+
+                                You can view all click counts for a button either in the
+                                analytics section or through your webhook.
+
+                            </p>
+
+                        </div>
+
+                        {/* RIGHT IMAGE */}
+                        <div className="w-full flex items-center justify-center p-6">
+
+                            <img
+                                src={whatsapp11}
+                                alt="Click Counts"
+                                className="w-full max-w-[500px] h-auto object-contain"
                             />
 
                         </div>

@@ -4,7 +4,7 @@ import sms1 from "../assets/Images/sms1.jpg"
 import sms2 from "../assets/Images/sms2.jpeg"
 import sms3 from "../assets/Images/sms3.jpg"
 import sms4 from "../assets/Images/sms4.jpg"
-import sms5 from "../assets/Images/sms5.jpg"
+import sms5 from "../assets/Images/sms5.png"
 import sms6 from "../assets/Images/sms6.jpg"
 import sms7 from "../assets/Images/sms7.jpg"
 import FAQ from './FAQ'

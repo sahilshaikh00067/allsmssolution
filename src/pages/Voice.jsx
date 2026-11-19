@@ -1,7 +1,7 @@
 import React from 'react'
 import voice from "../assets/Images/voice.svg";
 import voice1 from "../assets/Images/voice1.jpg";
-import voice11 from "../assets/Images/voice11.jpg";
+import voice11 from "../assets/Images/voice11.png";
 import voice2 from "../assets/Images/voice2.jpg";
 import voice3 from "../assets/Images/voice3.jpg";
 import voice4 from "../assets/Images/voice4.jpg";
@@ -110,7 +110,7 @@ export default function Voice() {
                         {/* RIGHT SIDE IMAGE */}
                         <div className="relative flex justify-end">
 
-                            <div className="w-full max-w-[900px] h-[510px] rounded-[1px] overflow-hidden">
+                            <div className="w-full max-w-[670px] h-[580px] rounded-[1px] overflow-hidden">
 
                                 <img
                                     src={voice11}

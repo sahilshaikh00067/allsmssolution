@@ -5,10 +5,10 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
-import chatbot2 from "../assets/Images/chatbot2.jpg";
-import chatbot3 from "../assets/Images/chatbot3.jpg";
-import chatbot4 from "../assets/Images/chatbot4.jpg";
-import chatbot5 from "../assets/Images/chatbot5.jpg";
+import chatbot2 from "../assets/Images/chatbot2.webp";
+import chatbot3 from "../assets/Images/chatbot3.png";
+import chatbot4 from "../assets/Images/chatbot4.webp";
+import chatbot5 from "../assets/Images/chatbot5.png";
 import chatbot6 from "../assets/Images/chatbot6.jpg";
 import chatbot7 from "../assets/Images/chatbot7.jpg";
 import chatbot8 from "../assets/Images/chatbot8.mp4";
