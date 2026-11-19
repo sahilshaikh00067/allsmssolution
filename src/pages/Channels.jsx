@@ -55,12 +55,13 @@ const Channels = () => {
 
                 <div className="max-w-[1400px]">
                     <h2 className="text-[38px] lg:text-[35px] font-bold text-[#111827] leading-tight">
-                        Communication Channels
+                        Business Communication Services
                     </h2>
                     <p className="text-[18px] lg:text-[22px] leading-[38px] mt-6 max-w-[1400px]">
-                        Empower conversations with best-in-class communication APIs.
-                        Full-featured APIs for developers and businesses to connect
-                        and engage your customers globally.
+                        Explore business communication solutions from All SMS Solution,
+                        including Bulk SMS, Email Marketing, WhatsApp Business API,
+                        Voice Calls, RCS Messaging and AI Chatbot services. Connect
+                        with customers through reliable communication channels and APIs.
                     </p>
                 </div>
 
@@ -73,7 +74,7 @@ const Channels = () => {
                         >
                             <img
                                 src={item.image}
-                                alt={item.title}
+                                alt={`${item.title} business communication service by All SMS Solution`}
                                 className="w-10 h-10 object-contain"
                             />
 
