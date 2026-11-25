@@ -29,7 +29,7 @@ import { openDirectWhatsApp } from "../utils/whatsapp";
 
 
 export default function Whatsapp() {
-    
+
 
     const [showMoreLeft, setShowMoreLeft] = useState(false);
     const [showMoreRight, setShowMoreRight] = useState(false);
@@ -73,9 +73,7 @@ export default function Whatsapp() {
 
                             {/* MAIN HEADING */}
                             <h1 className="text-[35px] lg:text-[40px] leading-[1.05] font-bold text-[#1f2937] max-w-[850px]">
-
-                                Seamless Global messaging and communications.
-
+                                WhatsApp Business API Provider for Business Messaging and Customer Engagement
                             </h1>
 
                             {/* DESCRIPTION */}
@@ -92,7 +90,7 @@ export default function Whatsapp() {
                                 <LeadPopup
                                     renderTrigger={(open) => (
                                         <button
-                                              onClick={open}
+                                            onClick={open}
 
                                             className="bg-black hover:bg-[#253254] text-white px-2 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300 border">
 
@@ -102,18 +100,18 @@ export default function Whatsapp() {
                                     )}
                                 />
 
-                                                        <LeadPopup
-                                                                                        whatsappNumber="918108378154"
+                                <LeadPopup
+                                    whatsappNumber="918108378154"
 
-                                                            renderTrigger={(open) => (
-                                                                <button
-                                                                      onClick={openDirectWhatsApp}
-                                                                    className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
-                                                                >
-                                                                    Chatbot
-                                                                </button>
-                                                            )}
-                                                        />
+                                    renderTrigger={(open) => (
+                                        <button
+                                            onClick={openDirectWhatsApp}
+                                            className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
+                                        >
+                                            Chatbot
+                                        </button>
+                                    )}
+                                />
 
                                 {/* MEETING */}
                                 {/* <button className="border border-black hover:bg-black text-black hover:text-white px-2 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300">
@@ -197,7 +195,7 @@ export default function Whatsapp() {
                             <LeadPopup
                                 renderTrigger={(open) => (
                                     <button
-                                          onClick={open}
+                                        onClick={open}
                                         className="inline-flex items-center gap-1 text-[#2563eb] text-1xl font-medium hover:gap-4 transition-all duration-300"
                                     >
                                         Talk to Us
@@ -270,17 +268,17 @@ export default function Whatsapp() {
                             should be.
                         </p>
 
-                                <LeadPopup
-                                    renderTrigger={(open) => (
-                                        <button
-                                              onClick={open}
-                            className="inline-flex items-center gap-2 text-[#2563eb] text-[16px] font-medium hover:gap-4 transition-all duration-300"
-                        >
-                            Book A Demo
-                            <span>➜</span>
-                        </button>
-                                    )}
-                                    />
+                        <LeadPopup
+                            renderTrigger={(open) => (
+                                <button
+                                    onClick={open}
+                                    className="inline-flex items-center gap-2 text-[#2563eb] text-[16px] font-medium hover:gap-4 transition-all duration-300"
+                                >
+                                    Book A Demo
+                                    <span>➜</span>
+                                </button>
+                            )}
+                        />
                     </div>
 
                 </div>
@@ -311,17 +309,17 @@ export default function Whatsapp() {
                             <li>• One Unified Inbox for All Chats - Instagram, Emails, Webchat</li>
                             <li>• Real-Time Customer Updates</li>
                         </ul>
-                                <LeadPopup
-                                    renderTrigger={(open) => (
-                                        <button
-                                              onClick={open}
-                            className="inline-flex items-center gap-2 text-[#2563eb] text-[16px] font-medium hover:gap-4 transition-all duration-300"
-                        >
-                            Try WhatsApp Support in Action
-                            <span>➜</span>
-                        </button>
-                                    )}
-                                    />
+                        <LeadPopup
+                            renderTrigger={(open) => (
+                                <button
+                                    onClick={open}
+                                    className="inline-flex items-center gap-2 text-[#2563eb] text-[16px] font-medium hover:gap-4 transition-all duration-300"
+                                >
+                                    Try WhatsApp Support in Action
+                                    <span>➜</span>
+                                </button>
+                            )}
+                        />
                     </div>
 
                     {/* RIGHT VIDEO */}
@@ -410,18 +408,18 @@ export default function Whatsapp() {
 
                         </div>
 
-                        
-                                <LeadPopup
-                                    renderTrigger={(open) => (
-                                        <button
-                                              onClick={open}
-                            className="inline-flex items-center gap-2 text-[#2563eb] text-[16   px] font-medium hover:gap-4 transition-all duration-300"
-                        >
-                            Book a Meeting
-                            <span>➜</span>
-                        </button>
-                                    )}
-                                    />
+
+                        <LeadPopup
+                            renderTrigger={(open) => (
+                                <button
+                                    onClick={open}
+                                    className="inline-flex items-center gap-2 text-[#2563eb] text-[16   px] font-medium hover:gap-4 transition-all duration-300"
+                                >
+                                    Book a Meeting
+                                    <span>➜</span>
+                                </button>
+                            )}
+                        />
                     </div>
 
                 </div>
@@ -901,7 +899,7 @@ export default function Whatsapp() {
             </section>
 
 
-                        <section className="w-full py-3 bg-gray-50">
+            <section className="w-full py-3 bg-gray-50">
 
                 <div className="w-full px-1">
 

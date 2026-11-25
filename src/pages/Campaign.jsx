@@ -56,11 +56,9 @@ export default function Campaign() {
                             </p>
 
                             {/* MAIN HEADING */}
-                            <h1 className="text-[35px] lg:text-[45px] leading-[1.05] font-bold text-[#1f2937] max-w-[850px]">
-
-                                Connect conversations across Channels and tools.
-
-                            </h1>
+<h1 className="text-[35px] lg:text-[45px] leading-[1.05] font-bold text-[#1f2937] max-w-[850px]">
+  Campaign Management and Marketing Automation for Business
+</h1>
 
                             {/* DESCRIPTION */}
                             <p className="text-[23px] leading-[36px] text-[#4b5563] mt-3 max-w-[850px]">

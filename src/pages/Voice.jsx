@@ -60,11 +60,9 @@ export default function Voice() {
                             </p>
 
                             {/* MAIN HEADING */}
-                            <h1 className="text-[35px] lg:text-[40px] leading-[1.08] font-bold text-[#1f2937] max-w-[850px]">
-
-                                Boost customer engagement and build trust
-
-                            </h1>
+<h1 className="text-[35px] lg:text-[40px] leading-[1.08] font-bold text-[#1f2937] max-w-[850px]">
+  Bulk Voice Call and IVR Solutions for Business Communication
+</h1>
 
                             {/* DESCRIPTION */}
                             <p className="text-[23px] leading-[34px] text-[#4b5563] mt-3 max-w-[850px]">

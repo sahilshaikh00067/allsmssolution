@@ -15,7 +15,7 @@ import { openDirectWhatsApp } from "../utils/whatsapp";
 
 
 export default function Sms() {
-    
+
     return (
         <>
             <section className="w-full flex items-center overflow-hidden">
@@ -52,9 +52,7 @@ export default function Sms() {
 
                         {/* MAIN HEADING */}
                         <h1 className="text-[40px] lg:text-[50px] leading-[1.05] font-bold text-[#1f2937] w-full max-w-[1400px]">
-
-                            Reach your customers globally with quick, scalable, and customizable message
-
+                            Bulk SMS Service Provider in India for Fast and Reliable Business Messaging
                         </h1>
 
                         {/* DESCRIPTION */}
@@ -72,7 +70,7 @@ export default function Sms() {
                             <LeadPopup
                                 renderTrigger={(open) => (
                                     <button
-                                          onClick={open}
+                                        onClick={open}
 
                                         className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[20px] font-medium transition-all duration-300 border border-[#1a212b]">
 
@@ -82,18 +80,18 @@ export default function Sms() {
                                 )}
                             />
 
-                                                    <LeadPopup
-                                                                                    whatsappNumber="918108378154"
+                            <LeadPopup
+                                whatsappNumber="918108378154"
 
-                                                        renderTrigger={(open) => (
-                                                            <button
-                                                                  onClick={openDirectWhatsApp}
-                                                                className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
-                                                            >
-                                                                Chatbot
-                                                            </button>
-                                                        )}
-                                                    />
+                                renderTrigger={(open) => (
+                                    <button
+                                        onClick={openDirectWhatsApp}
+                                        className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
+                                    >
+                                        Chatbot
+                                    </button>
+                                )}
+                            />
                         </div>
 
                     </div>

@@ -1,5 +1,4 @@
-
 User-agent: *
 Allow: /
 
-Sitemap: https://allsmssolution.com/sitemap.xml
+Sitemap: https://www.allsmssolution.com/sitemap.xml

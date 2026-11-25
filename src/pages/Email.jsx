@@ -33,7 +33,7 @@ import { openDirectWhatsApp } from "../utils/whatsapp";
 
 
 export default function Email() {
-    
+
 
     const [showMoreLeft, setShowMoreLeft] = useState(false);
     const [showMoreRight, setShowMoreRight] = useState(false);
@@ -79,11 +79,8 @@ export default function Email() {
 
                             {/* MAIN HEADING */}
                             <h1 className="text-[35px] lg:text-[40px] leading-[1.08] font-bold text-[#1f2937] max-w-[850px]">
-
-                                Deliver Secure & Instant Emails
-
+                                Bulk Email API and Email Marketing Services for Business
                             </h1>
-
                             {/* DESCRIPTION */}
                             <p className="text-[23px] leading-[34px] text-[#4b5563] mt-3 max-w-[850px]">
 
@@ -96,31 +93,31 @@ export default function Email() {
                             {/* BUTTON */}
                             <div className="flex flex-wrap items-center gap-3 mt-5">
 
-                                               <LeadPopup
-                                                   renderTrigger={(open) => (
-                                                       <button
-                                                             onClick={open}
+                                <LeadPopup
+                                    renderTrigger={(open) => (
+                                        <button
+                                            onClick={open}
 
-                                 className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[18px] font-medium transition-all duration-300 border border-[#1a212b]">
+                                            className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[18px] font-medium transition-all duration-300 border border-[#1a212b]">
 
-                                    Get Started
+                                            Get Started
 
-                                </button>
-                                                   )}
-                                                   />
+                                        </button>
+                                    )}
+                                />
 
-                                                                           <LeadPopup
-                                                                                                           whatsappNumber="918108378154"
+                                <LeadPopup
+                                    whatsappNumber="918108378154"
 
-                                                                               renderTrigger={(open) => (
-                                                                                   <button
-                                                                                         onClick={openDirectWhatsApp}
-                                                                                       className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
-                                                                                   >
-                                                                                       Chatbot
-                                                                                   </button>
-                                                                               )}
-                                                                           />
+                                    renderTrigger={(open) => (
+                                        <button
+                                            onClick={openDirectWhatsApp}
+                                            className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
+                                        >
+                                            Chatbot
+                                        </button>
+                                    )}
+                                />
 
                             </div>
 
@@ -2515,7 +2512,7 @@ export default function Email() {
 
                         </div>
 
-<div className="relative flex justify-end">
+                        <div className="relative flex justify-end">
 
                             <div className="w-full max-w-[900px] h-[510px] rounded-[1px] overflow-hidden">
 

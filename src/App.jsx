@@ -1,4 +1,3 @@
-
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -26,6 +25,7 @@ import Industry from "./pages/Industry";
 import LeadPopup from "./components/Leadpopup";
 
 import SEO from "./components/SEO";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -37,7 +37,9 @@ function App() {
       <LeadPopup />
 
       <Routes>
-        {/* Homepage */}
+        {/* =========================
+            HOMEPAGE
+        ========================== */}
         <Route
           path="/"
           element={
@@ -52,7 +54,9 @@ function App() {
           }
         />
 
-        {/* Hello */}
+        {/* =========================
+            HELLO
+        ========================== */}
         <Route
           path="/hello"
           element={
@@ -67,7 +71,9 @@ function App() {
           }
         />
 
-        {/* Campaign */}
+        {/* =========================
+            CAMPAIGN
+        ========================== */}
         <Route
           path="/campaign"
           element={
@@ -82,7 +88,9 @@ function App() {
           }
         />
 
-        {/* Industry */}
+        {/* =========================
+            INDUSTRY
+        ========================== */}
         <Route
           path="/industry"
           element={
@@ -97,7 +105,9 @@ function App() {
           }
         />
 
-        {/* OTP */}
+        {/* =========================
+            OTP
+        ========================== */}
         <Route
           path="/otp"
           element={
@@ -112,7 +122,9 @@ function App() {
           }
         />
 
-        {/* SMS */}
+        {/* =========================
+            BULK SMS
+        ========================== */}
         <Route
           path="/sms"
           element={
@@ -127,7 +139,9 @@ function App() {
           }
         />
 
-        {/* Email */}
+        {/* =========================
+            EMAIL
+        ========================== */}
         <Route
           path="/email"
           element={
@@ -142,7 +156,9 @@ function App() {
           }
         />
 
-        {/* WhatsApp */}
+        {/* =========================
+            WHATSAPP
+        ========================== */}
         <Route
           path="/whatsapp"
           element={
@@ -157,7 +173,9 @@ function App() {
           }
         />
 
-        {/* Voice */}
+        {/* =========================
+            VOICE
+        ========================== */}
         <Route
           path="/voice"
           element={
@@ -172,7 +190,9 @@ function App() {
           }
         />
 
-        {/* RCS */}
+        {/* =========================
+            RCS
+        ========================== */}
         <Route
           path="/rcs"
           element={
@@ -187,7 +207,9 @@ function App() {
           }
         />
 
-        {/* Chatbot */}
+        {/* =========================
+            AI CHATBOT
+        ========================== */}
         <Route
           path="/chatbot"
           element={
@@ -202,7 +224,9 @@ function App() {
           }
         />
 
-        {/* Services */}
+        {/* =========================
+            SERVICES
+        ========================== */}
         <Route
           path="/services"
           element={
@@ -217,7 +241,9 @@ function App() {
           }
         />
 
-        {/* About */}
+        {/* =========================
+            ABOUT
+        ========================== */}
         <Route
           path="/about"
           element={
@@ -232,7 +258,9 @@ function App() {
           }
         />
 
-        {/* Contact */}
+        {/* =========================
+            CONTACT
+        ========================== */}
         <Route
           path="/contact"
           element={
@@ -247,7 +275,9 @@ function App() {
           }
         />
 
-        {/* Terms */}
+        {/* =========================
+            TERMS & CONDITIONS
+        ========================== */}
         <Route
           path="/terms"
           element={
@@ -262,7 +292,9 @@ function App() {
           }
         />
 
-        {/* Privacy Policy */}
+        {/* =========================
+            PRIVACY POLICY
+        ========================== */}
         <Route
           path="/privacy-policy"
           element={
@@ -273,6 +305,25 @@ function App() {
                 path="/privacy-policy"
               />
               <PrivacyPolicy />
+            </>
+          }
+        />
+
+        {/* =========================
+            404 - PAGE NOT FOUND
+            MUST BE LAST
+        ========================== */}
+        <Route
+          path="*"
+          element={
+            <>
+              <SEO
+                title="Page Not Found | All SMS Solution"
+                description="The page you are looking for does not exist."
+                path="/404"
+                noIndex={true}
+              />
+              <NotFound />
             </>
           }
         />

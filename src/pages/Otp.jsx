@@ -18,7 +18,7 @@ import { openDirectWhatsApp } from "../utils/whatsapp";
 
 
 export default function Otp() {
-    
+
 
     const [showMoreLeft, setShowMoreLeft] = useState(false);
     const [showMoreRight, setShowMoreRight] = useState(false);
@@ -63,9 +63,7 @@ export default function Otp() {
 
                             {/* MAIN HEADING */}
                             <h1 className="text-[35px] lg:text-[45px] leading-[1.08] font-bold text-[#1f2937] max-w-[850px]">
-
-                                Effortless OTP Verification Across Channels
-
+                                OTP SMS Service & API Provider for Secure Verification
                             </h1>
 
                             {/* DESCRIPTION */}
@@ -83,28 +81,28 @@ export default function Otp() {
                                 <LeadPopup
                                     renderTrigger={(open) => (
                                         <button
-                                              onClick={open}
+                                            onClick={open}
 
-                                 className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[18px] font-medium transition-all duration-300 border border-[#1a212b]">
+                                            className="bg-[#201e1e] hover:bg-[#1b2738] text-[#fafafa] px-3 py-1 rounded-[6px] text-[18px] font-medium transition-all duration-300 border border-[#1a212b]">
 
-                                    Get Started For Free
+                                            Get Started For Free
 
-                                </button>
+                                        </button>
                                     )}
                                 />
 
-                                                        <LeadPopup
-                                                                                        whatsappNumber="918108378154"
+                                <LeadPopup
+                                    whatsappNumber="918108378154"
 
-                                                            renderTrigger={(open) => (
-                                                                <button
-                                                                      onClick={openDirectWhatsApp}
-                                                                    className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
-                                                                >
-                                                                    Chatbot
-                                                                </button>
-                                                            )}
-                                                        />
+                                    renderTrigger={(open) => (
+                                        <button
+                                            onClick={openDirectWhatsApp}
+                                            className="px-4 py-1.5 ml-2 border border-[#111827] text-[#111827] text-[18px] font-medium rounded-[6px] hover:bg-[#111827] hover:text-white transition-all duration-300"
+                                        >
+                                            Chatbot
+                                        </button>
+                                    )}
+                                />
 
                             </div>
 

@@ -43,10 +43,9 @@ const RCS = ({
                             {eyebrow}
                         </p>
 
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#111827] leading-tight mb-5">
-                            {heading}
-                        </h2>
-
+<h1 className="text-3xl md:text-4xl font-bold text-[#111827] leading-tight mb-5">
+  RCS Business Messaging Services for Interactive Customer Communication
+</h1>
                         <p className="text-gray-600 text-base mb-7 max-2xl">
                             {description}
                         </p>

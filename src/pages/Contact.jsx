@@ -164,7 +164,9 @@ export default function GetInTouch() {
         {/* Header */}
         <div className="gt-header">
           <span className="gt-eyebrow">Get in Touch</span>
-          <h2 className="gt-title">How can we help you?</h2>
+          <h1 className="gt-title">
+            Contact All SMS Solution
+          </h1>
           <p className="gt-sub">Reach our sales or support teams, or send us a message directly on WhatsApp.</p>
         </div>
 
